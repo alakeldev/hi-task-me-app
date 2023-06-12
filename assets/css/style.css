@@ -14,7 +14,6 @@ body {
 }
 
 /* Start index.html page css rules */
-
 /* Targets the main container inside index.html page and set below css rules to it */
 .main-container {
     height: 100vh;
@@ -65,6 +64,7 @@ body {
     border-radius: 10px;
     text-transform: uppercase;
     box-shadow: 0 0 20px #41ead4 inset;
+    cursor: pointer;
 }
 
 /* Targets the Exit button and set below css rules to it */
@@ -79,9 +79,12 @@ body {
     border-radius: 10px;
     text-transform: uppercase;
     box-shadow: 0 0 20px #ff206e inset;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
-/*Start Media Rules to index.html page */
+
+/* Start Media Rules to index.html page */
 /* Set simple media rules till screens size: max-width = 530px */
 @media screen and (max-width: 530px) {
     .inside-container {
@@ -100,9 +103,27 @@ body {
     .exit {
         width: 60px;
         font-size: 10px;
+        margin-bottom: 5px;
     }
 }
 
 /*End Media Rules to index.html page */
-
 /* End index.html page CSS rules */
+
+/* Start seeyoulater.html page CSS rules / its Media Rules too */
+.main-container h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 405px) {
+    .main-container h3 {
+        font-size: 10px;
+    }
+}
+
+/* End seeyoulater.html page CSS rules / it's Media Rules too */
