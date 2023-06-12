@@ -1,0 +1,12 @@
+/* Google fonts = Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@500&display=swap');
+
+/* Start Global Rules To All To Do List Website */
+* {
+    box-sizing: border-box;
+}
+
+/* Give All Elements Font Family Lora and Sans-Serif as Alt Font To All Website Pages */
+body {
+    font-family: Lora, sans-serif;
+}
