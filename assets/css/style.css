@@ -4,6 +4,8 @@
 /* Start Global Rules To All To Do List Website */
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /* Give All Elements Font Family Lora and Sans-Serif as Alt Font To All Website Pages */
