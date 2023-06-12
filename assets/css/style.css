@@ -12,3 +12,97 @@
 body {
     font-family: Lora, sans-serif;
 }
+
+/* Start index.html page css rules */
+
+/* Targets the main container inside index.html page and set below css rules to it */
+.main-container {
+    height: 100vh;
+    position: relative;
+    background-color: #000000cc;
+    padding: 10px;
+}
+
+/* Targets the inside container itself and set below css rules to it */
+.inside-container {
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black inset;
+}
+
+/* Targets the img inside the inside container and set below css rules to it */
+.main-container .inside-container img {
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+/* Targets The h2 inside the inside container and set below css rules to it */
+.main-container .inside-container h2 {
+    padding-bottom: 10px;
+}
+
+/* Targets the P inside the inside container and set below css rules to it */
+.main-container .inside-container p {
+    padding: 10px 0;
+}
+
+/* Targets the Start button and set below css rules to it */
+.start {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    right: 15px;
+    bottom: -10px;
+    background-color: #171d23;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px #41ead4 inset;
+}
+
+/* Targets the Exit button and set below css rules to it */
+.exit {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 15px;
+    bottom: -10px;
+    background-color: #171d23;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px #ff206e inset;
+}
+
+/*Start Media Rules to index.html page */
+/* Set simple media rules till screens size: max-width = 530px */
+@media screen and (max-width: 530px) {
+    .inside-container {
+        width: 200px;
+    }
+
+    .main-container .inside-container p {
+        font-size: 11px;
+    }
+
+    .main-container .inside-container h2 {
+        font-size: 15px;
+    }
+
+    .start,
+    .exit {
+        width: 60px;
+        font-size: 10px;
+    }
+}
+
+/*End Media Rules to index.html page */
+
+/* End index.html page CSS rules */
