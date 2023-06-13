@@ -185,12 +185,20 @@ and I will copy some rules from previous start button rules and make some change
     cursor: pointer;
     text-transform: uppercase;
 }
+
 /* Targets The div that will show and contain the added tasks and set below css rules */
 .my-all-tasks {
     margin-top: 30px;
     background-color: #cdcbcc;
     border-radius: var(--border-radius-main-value);
     padding: 20px;
+}
+
+/* Targets The label inside .task-from-area (div), set css rules below */
+.task-form-area label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 7px;
 }
 
 /* End todolistpage.html Page css rulse */
