@@ -170,5 +170,18 @@ and I will copy some rules from previous start button rules and make some change
     cursor: pointer;
 }
 
+/* Targets the Exit button with class .exit-sulp and set below css rules */
+.exit-sulp {
+    width: 50px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    background-color: var(--main-background-color);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff206e inset;
+    cursor: pointer;
+    text-transform: uppercase;
+}
 
 /* End todolistpage.html Page css rulse */
