@@ -1,9 +1,11 @@
 /* Google fonts = Lora */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@500&display=swap');
+
 /* Set Global Scope Variables for come properties that i'm gonna use it continuously */
 :root {
     --main-background-color: #000000cc;
 }
+
 /* Start Global Rules To All To Do List Website */
 * {
     box-sizing: border-box;
@@ -130,3 +132,43 @@ body {
 }
 
 /* End seeyoulater.html page CSS rules / it's Media Rules too */
+
+/* Start todolistpage.html page css rulse */
+/* Targets the div with class .task-form-area and set below css rules */
+.task-form-area {
+    background-color: #cdcbcc;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/* Targets the input field with class .my-text-input 
+in this field i will write my new task. set below css rules */
+.my-text-input {
+    padding: 15px;
+    width: 100%;
+    margin: 15px auto;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+}
+
+/* Remove the outline when focusing in input task field */
+.my-text-input:focus {
+    outline: none;
+}
+
+/* Targets the add button with class .add-btn
+and I will copy some rules from previous start button rules and make some changes */
+.add-btn {
+    width: 115px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    background-color: var(--main-background-color);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #41ead4 inset;
+    cursor: pointer;
+}
+
+
+/* End todolistpage.html Page css rulse */
