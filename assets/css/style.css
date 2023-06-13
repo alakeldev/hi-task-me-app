@@ -1,9 +1,11 @@
 /* Google fonts = Lora */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@500&display=swap');
 
-/* Set Global Scope Variables for come properties that i'm gonna use it continuously */
+/* Set Global Scope Variables for some properties that i'm gonna use it continuously */
 :root {
     --main-background-color: #000000cc;
+    --border-radius-main-value: 20px;
+    --border-radius-for-buttons: 10px;
 }
 
 /* Start Global Rules To All To Do List Website */
@@ -37,13 +39,13 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: #f0f0f0;
-    border-radius: 20px;
+    border-radius: var(--border-radius-main-value);
     box-shadow: 0 0 20px black inset;
 }
 
 /* Targets the img inside the inside container and set below css rules to it */
 .main-container .inside-container img {
-    border-radius: 20px;
+    border-radius: var(--border-radius-main-value);
     max-width: 100%;
 }
 
@@ -66,7 +68,7 @@ body {
     bottom: -10px;
     background-color: var(--main-background-color);
     color: white;
-    border-radius: 10px;
+    border-radius: var(--border-radius-for-buttons);
     text-transform: uppercase;
     box-shadow: 0 0 20px #41ead4 inset;
     cursor: pointer;
@@ -81,7 +83,7 @@ body {
     bottom: -10px;
     background-color: var(--main-background-color);
     color: white;
-    border-radius: 10px;
+    border-radius: var(--border-radius-for-buttons);
     text-transform: uppercase;
     box-shadow: 0 0 20px #ff206e inset;
     cursor: pointer;
@@ -138,7 +140,7 @@ body {
 .task-form-area {
     background-color: #cdcbcc;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: var(--border-radius-main-value);
 }
 
 /* Targets the input field with class .my-text-input 
@@ -148,7 +150,7 @@ in this field i will write my new task. set below css rules */
     width: 100%;
     margin: 15px auto;
     border: 1px solid #e5e5e5;
-    border-radius: 20px;
+    border-radius: var(--border-radius-main-value);
 }
 
 /* Remove the outline when focusing in input task field */
@@ -165,7 +167,7 @@ and I will copy some rules from previous start button rules and make some change
     margin: auto;
     background-color: var(--main-background-color);
     color: white;
-    border-radius: 10px;
+    border-radius: var(--border-radius-for-buttons);
     box-shadow: 0 0 20px #41ead4 inset;
     cursor: pointer;
 }
@@ -178,10 +180,17 @@ and I will copy some rules from previous start button rules and make some change
     margin-left: auto;
     background-color: var(--main-background-color);
     color: white;
-    border-radius: 10px;
+    border-radius: var(--border-radius-for-buttons);
     box-shadow: 0 0 20px #ff206e inset;
     cursor: pointer;
     text-transform: uppercase;
+}
+/* Targets The div that will show and contain the added tasks and set below css rules */
+.my-all-tasks {
+    margin-top: 30px;
+    background-color: #cdcbcc;
+    border-radius: var(--border-radius-main-value);
+    padding: 20px;
 }
 
 /* End todolistpage.html Page css rulse */
