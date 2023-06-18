@@ -1,6 +1,6 @@
 // Declare variables and set the two buttons inside start page to these variables
 let startBtn = document.getElementById("start-btn"),
-    exitBtn = document.getElementById("first-exit-btn");
+    exitBtn = document.getElementById("close-btn");
 
 // Add event listener (click) that proceed with a function to open the next app page when the user clicked on the Start button
 startBtn.addEventListener("click", function () {

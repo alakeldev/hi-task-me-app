@@ -72,6 +72,7 @@ body {
     text-transform: uppercase;
     box-shadow: 0 0 20px #41ead4 inset;
     cursor: pointer;
+    letter-spacing: 2.5px;
 }
 
 /* Targets the Exit button and set below css rules to it */
@@ -88,6 +89,7 @@ body {
     box-shadow: 0 0 20px #ff206e inset;
     cursor: pointer;
     margin-bottom: 10px;
+    letter-spacing: 2.5px;
 }
 
 
@@ -170,6 +172,7 @@ and I will copy some rules from previous start button rules and make some change
     border-radius: var(--border-radius-for-buttons);
     box-shadow: 0 0 20px #41ead4 inset;
     cursor: pointer;
+    letter-spacing: 0.5px;
 }
 
 /* Targets the Exit button with class .exit-sulp and set below css rules */
@@ -184,6 +187,7 @@ and I will copy some rules from previous start button rules and make some change
     box-shadow: 0 0 20px #ff206e inset;
     cursor: pointer;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Targets The div that will show and contain the added tasks and set below css rules */
