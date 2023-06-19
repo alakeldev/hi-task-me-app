@@ -43,7 +43,7 @@ function showTasksOnPage(theTasks) {
     // Empty div to avoid the repetition of add same task
     myAllTasks.innerHTML = "";
     // make looping on the array of tasks
-    theAllTasksArray.forEach((newTaskData) => {
+    theTasks.forEach((newTaskData) => {
         // Create main div to contain each new added task
         let eachTaskDiv = document.createElement("div");
         eachTaskDiv.className = "the-new-task";             // set value to class attribute in the previous div
