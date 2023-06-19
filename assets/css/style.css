@@ -76,7 +76,7 @@ body {
 }
 
 /* Targets the Exit button and set below css rules to it */
-.exit {
+.close {
     width: 100px;
     height: 30px;
     position: relative;
@@ -109,7 +109,7 @@ body {
     }
 
     .start,
-    .exit {
+    .close {
         width: 60px;
         font-size: 10px;
         margin-bottom: 5px;
@@ -193,7 +193,7 @@ and I will copy some rules from previous start button rules and make some change
 /* Targets The div that will show and contain the added tasks and set below css rules */
 .my-all-tasks {
     margin-top: 30px;
-    background-color: #cdcbcc;
+    background-color: white;
     border-radius: var(--border-radius-main-value);
     padding: 20px;
 }
@@ -203,6 +203,29 @@ and I will copy some rules from previous start button rules and make some change
     display: block;
     margin-top: 10px;
     margin-left: 7px;
+}
+
+/* Targets Each div (new task added) inside the main div with class (.my-all-tasks) */
+.my-all-tasks .the-new-task {
+    background: #cdcbcc;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: var(--border-radius-main-value);
+    font-size: 18px;
+}
+
+/* Targets Each button inside each new task added inside the main div with class (.my-all-tasks) */
+.my-all-tasks .del-btn {
+    width: 60px;
+    height: 30px;
+    border-radius: var(--border-radius-for-buttons);
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color: black;
+    box-shadow: 0 0 30px #ff206e inset;
 }
 
 /* End todolistpage.html Page css rulse */
