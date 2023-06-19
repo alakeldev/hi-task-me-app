@@ -35,4 +35,35 @@ function myNewTasks(theCtask) {
     };
     // Add the new Task to the array (theAllTasksArray) and store it with its random ID
     theAllTasksArray.push(newTaskData);
+    // call the showTasksOnPage function that showing insde myAllTasks div each task added. (all inside the main page App)
+    showTasksOnPage(theAllTasksArray);
+}
+// Creat The function that showing the tasks on the page
+function showTasksOnPage(theTasks) {
+    // Empty div to avoid the repetition of add same task
+    myAllTasks.innerHTML = "";
+    // make looping on the array of tasks
+    theAllTasksArray.forEach((newTaskData) => {
+        // Create main div to contain each new added task
+        let eachTaskDiv = document.createElement("div");
+        eachTaskDiv.className = "the-new-task";             // set value to class attribute in the previous div
+        // Create custome attribute and set its value from random id of the newTaskData Object
+        eachTaskDiv.setAttribute("task-id", newTaskData.id);
+        // Create Variable that store the text task content from the newTaskData Object
+        let taskTextContent = document.createTextNode(newTaskData.content);
+        // add the text task content to the new created div
+        eachTaskDiv.appendChild(taskTextContent);
+
+        // Create Delete Button
+        let delBtn = document.createElement("input");
+        delBtn.className = "del-btn";                   // set value to class attribute in delete button
+        delBtn.setAttribute("type", "submit");          // set value for type attribute in delete button
+        delBtn.setAttribute("value", "Delete");         // set value for value attribute in delete button
+        // Add the delete button (input type:submit) inside the main created div (eachTaskDiv)
+        eachTaskDiv.appendChild(delBtn);
+        // Add the created div(eachTaskDiv) to the Tasks div (Main Container)
+        myAllTasks.appendChild(eachTaskDiv);
+
+        taskInput.focus();  // Auto focus again on the input(new task field) after showed/added the new task on page
+    });
 }
