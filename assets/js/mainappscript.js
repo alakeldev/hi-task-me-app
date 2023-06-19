@@ -4,6 +4,11 @@ let exitBtn = document.getElementById("exit-btn"),
     addTaskBtn = document.querySelector(".add-btn"),
     myAllTasks = document.querySelector(".my-all-tasks");
 
+// Create a function works after page loaded that make auto focus on the input(new task field).
+window.onload = function () {
+    taskInput.focus();
+};
+
 /* Add event listener (click) that proceed with a function to exit the main page app when the user clicked
 on the Exit button and lead the user to (see you later page) */
 exitBtn.addEventListener("click", function () {
