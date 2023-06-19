@@ -54,16 +54,17 @@ function showTasksOnPage(theTasks) {
         // add the text task content to the new created div
         eachTaskDiv.appendChild(taskTextContent);
 
-        // Create Delete Button
-        let delBtn = document.createElement("input");
-        delBtn.className = "del-btn";                   // set value to class attribute in delete button
-        delBtn.setAttribute("type", "submit");          // set value for type attribute in delete button
-        delBtn.setAttribute("value", "Delete");         // set value for value attribute in delete button
-        // Add the delete button (input type:submit) inside the main created div (eachTaskDiv)
-        eachTaskDiv.appendChild(delBtn);
-        // Add the created div(eachTaskDiv) to the Tasks div (Main Container)
-        myAllTasks.appendChild(eachTaskDiv);
-
+        // Create Delete Button after check that the new tesk input is not empty
+        if (newTaskData.content !== "") {
+            let delBtn = document.createElement("input");
+            delBtn.className = "del-btn";                   // set value to class attribute in delete button
+            delBtn.setAttribute("type", "submit");          // set value for type attribute in delete button
+            delBtn.setAttribute("value", "Delete");         // set value for value attribute in delete button
+            // Add the delete button (input type:submit) inside the main created div (eachTaskDiv)
+            eachTaskDiv.appendChild(delBtn);
+            // Add the created div(eachTaskDiv) to the Tasks div (Main Container)
+            myAllTasks.appendChild(eachTaskDiv);
+        }
         taskInput.focus();  // Auto focus again on the input(new task field) after showed/added the new task on page
     });
 }
