@@ -43,7 +43,9 @@ function myNewTasks(theCtask) {
         content: theCtask,                               // the new task content (it comes from the new task input field(value))
     };
     // Add the new Task to the array (theAllTasksArray) and store it with its random ID
-    theAllTasksArray.push(newTaskData);
+    if (newTaskData.content !== "") {     // I added this condition because the empty content task was added only on local storage
+        theAllTasksArray.push(newTaskData);    // and I don't want to added it empty if the input new task field(content) was empty!!
+    }
     // call the showTasksOnPage function that showing insde myAllTasks div each task added. (all inside the main page App)
     showTasksOnPage(theAllTasksArray);
     // call the addTasksToLocalStorage function that showing and adding the Tasks to Local Storage (LS).
