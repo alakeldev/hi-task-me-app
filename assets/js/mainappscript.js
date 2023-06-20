@@ -18,6 +18,15 @@ exitBtn.addEventListener("click", function () {
 // Creat new Empty Array to Add and Store the new Tasks one after one
 let theAllTasksArray = [];
 
+// check if the local storage has tasks stored inside it / if found tasks inside it so it will set those tasks to theAllTasksArray(array)
+if (window.localStorage.getItem("my-tasks")) {
+    theAllTasksArray = JSON.parse(window.localStorage.getItem("my-tasks"));
+}
+
+/* Call getTasksFromLS function - that takes the data from local storage also inside this function we call 
+another function that showing these data/tasks on the page */
+getTasksFromLS();
+
 // addNewTask button -  Anonymous Function will proceed when the user click on the add new task button
 addTaskBtn.onclick = function () {
     if (taskInput !== "") {            // if condition checking the new task input that is not empty 
@@ -37,7 +46,10 @@ function myNewTasks(theCtask) {
     theAllTasksArray.push(newTaskData);
     // call the showTasksOnPage function that showing insde myAllTasks div each task added. (all inside the main page App)
     showTasksOnPage(theAllTasksArray);
+    // call the addTasksToLocalStorage function that showing and adding the Tasks to Local Storage (LS).
+    addTasksToLS(theAllTasksArray);
 }
+
 // Creat The function that showing the tasks on the page
 function showTasksOnPage(theTasks) {
     // Empty div to avoid the repetition of add same task
@@ -67,4 +79,18 @@ function showTasksOnPage(theTasks) {
         }
         taskInput.focus();  // Auto focus again on the input(new task field) after showed/added the new task on page
     });
+}
+
+// Create Function that adding the tasks to Local Storage
+function addTasksToLS(theTasks) {
+    window.localStorage.setItem("my-tasks", JSON.stringify(theTasks));
+}
+
+// Creat Function that getting the Data/Tasks from Local Storage
+function getTasksFromLS() {
+    let myTasks = window.localStorage.getItem("my-tasks");
+    if (myTasks) {
+        let tasks = JSON.parse(myTasks);
+        showTasksOnPage(tasks);   // call function that showing the tasks but set its parameter the data/tasks from local storage
+    }
 }
