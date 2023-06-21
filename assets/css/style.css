@@ -18,6 +18,7 @@
 /* Give All Elements Font Family Lora and Sans-Serif as Alt Font To All Website Pages */
 body {
     font-family: Lora, sans-serif;
+    background-color: var(--main-background-color);
 }
 
 /* Start index.html page css rules */
@@ -25,7 +26,6 @@ body {
 .main-container {
     height: 100vh;
     position: relative;
-    background-color: var(--main-background-color);
     padding: 10px;
 }
 
