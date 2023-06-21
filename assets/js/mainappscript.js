@@ -96,3 +96,10 @@ function getTasksFromLS() {
         showTasksOnPage(tasks);   // call function that showing the tasks but set its parameter the data/tasks from local storage
     }
 }
+
+// Create Function to make each delete button on each added task is working and removing the task
+myAllTasks.addEventListener("click", function (myDel) {
+    if (myDel.target.classList.contains("del-btn")) {       // Check if it's delete button
+        myDel.target.parentElement.remove();    // Remove the task => the parent element of delete button {the div with class (".the-new-task")}
+    }
+})
