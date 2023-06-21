@@ -81,6 +81,14 @@ function showTasksOnPage(theTasks) {
         }
         taskInput.focus();  // Auto focus again on the input(new task field) after showed/added the new task on page
     });
+    if (theAllTasksArray.length >= 2) {     // Condition to check if theAllTasksArray has two tasks or more to Create/Show the clear all button
+        let clearAllBtn = document.createElement("input");
+        clearAllBtn.classList = "clear-all-btn";            // set value to class attribute in clear all button
+        clearAllBtn.setAttribute("type", "submit");         // set value to type attribute in clear all button
+        clearAllBtn.setAttribute("value", "Clear All");     // set value to value attribute in clear all button
+        // Add the Clear All button (input type: submit) to the Tasks div (Main Container)
+        myAllTasks.appendChild(clearAllBtn);
+    }
 }
 
 // Create Function that adding the tasks to Local Storage
@@ -103,6 +111,10 @@ myAllTasks.addEventListener("click", function (myDel) {
         myDel.target.parentElement.remove();    // Remove the task => the parent element of delete button {the div with class (".the-new-task")}
 
         removeTaskFromLS(myDel.target.parentElement.getAttribute("task-id"));   //Call function to remove the Task from Local Storage
+    }
+
+    if (theAllTasksArray.length <= 1) {     // Condition to check if theAllTasksArray reached to one task or none to hide the clear all button
+        document.querySelector(".clear-all-btn").style.display = "none";         // set Clear All button (display: none;)
     }
 })
 
