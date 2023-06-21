@@ -215,15 +215,15 @@ and I will copy some rules from previous start button rules and make some change
     margin: 15px auto;
     border-radius: var(--border-radius-main-value);
     font-size: 18px;
+    overflow: auto;
 }
 
-/* Add Media query for screens till width: 767px */
-@media screen and (max-width: 767px) {
+/* Add Media query for screens till width: 992px */
+@media screen and (max-width: 992px) {
     .my-all-tasks .the-new-task {
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow: auto;
     }
 
     .my-all-tasks .del-btn {
