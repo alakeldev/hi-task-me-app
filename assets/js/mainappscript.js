@@ -97,9 +97,19 @@ function getTasksFromLS() {
     }
 }
 
-// Create Function to make each delete button on each added task is working and removing the task
+//Add event listener on click to proceed with a Function to make each delete button on each added task is working and removing the related task
 myAllTasks.addEventListener("click", function (myDel) {
     if (myDel.target.classList.contains("del-btn")) {       // Check if it's delete button
         myDel.target.parentElement.remove();    // Remove the task => the parent element of delete button {the div with class (".the-new-task")}
+
+        removeTaskFromLS(myDel.target.parentElement.getAttribute("task-id"));   //Call function to remove the Task from Local Storage
     }
 })
+
+// Creat a Function to Delete the related task from Local Storage
+function removeTaskFromLS(theTask) {
+    theAllTasksArray = theAllTasksArray.filter(function (newTaskData) {
+        return newTaskData.id != theTask;
+    });
+    addTasksToLS(theAllTasksArray);     // the new value of array pass as an argument to update the tasks on LS
+}
