@@ -129,6 +129,7 @@ body {
     letter-spacing: 2px;
 }
 
+/* Add Media query till width: 405px */
 @media screen and (max-width: 405px) {
     .main-container h3 {
         font-size: 10px;
@@ -222,8 +223,10 @@ and I will copy some rules from previous start button rules and make some change
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: auto;
     }
-    .my-all-tasks .del-btn { 
+
+    .my-all-tasks .del-btn {
         margin-top: 15px;
     }
 

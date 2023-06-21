@@ -29,9 +29,11 @@ getTasksFromLS();
 
 // addNewTask button -  Anonymous Function will proceed when the user click on the add new task button
 addTaskBtn.onclick = function () {
-    if (taskInput !== "") {            // if condition checking the new task input that is not empty 
+    if (taskInput !== "" && taskInput.value.length < 70) {  //If condition checking the new task input that is not empty and less than 70 char 
         myNewTasks(taskInput.value);   // Call function that take the user input value ( new task) as a parameter
         taskInput.value = "";          // to Empty the input field after taking its value related to code in previous line
+    } else {
+        alert("You Entered more than 70 characters")       // Showing Alert to user if Entered 70 Char or more 
     }
 }
 
@@ -88,7 +90,7 @@ function showTasksOnPage(theTasks) {
         clearAllBtn.setAttribute("value", "Clear All");     // set value to value attribute in clear all button
         // Add the Clear All button (input type: submit) to the Tasks div (Main Container)
         myAllTasks.appendChild(clearAllBtn);
-        
+
         // Add event listener on click to proceed with a fucntion to delete all display tasks also clear the local storage and the array too
         clearAllBtn.addEventListener("click", function () {
             myAllTasks.innerHTML = "";              // Empty the main div (myAllTasks)
