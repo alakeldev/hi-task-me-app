@@ -15,7 +15,7 @@ exitBtn.addEventListener("click", function () {
     window.open("seeyoulater.html", "_self");
 });
 
-// Creat new Empty Array to Add and Store the new Tasks one after one
+// Create new Empty Array to Add and Store the new Tasks one after one
 let theAllTasksArray = [];
 
 // check if the local storage has tasks stored inside it / if found tasks inside it so it will set those tasks to theAllTasksArray(array)
@@ -30,14 +30,14 @@ getTasksFromLS();
 // addNewTask button -  Anonymous Function will proceed when the user click on the add new task button
 addTaskBtn.onclick = function () {
     if (taskInput !== "" && taskInput.value.length < 70) {  //If condition checking the new task input that is not empty and less than 70 char 
-        myNewTasks(taskInput.value);   // Call function that take the user input value ( new task) as a parameter
+        myNewTasks(taskInput.value);   // Call function that take the user input value ( new task) as an argument
         taskInput.value = "";          // to Empty the input field after taking its value related to code in previous line
     } else {
-        alert("You Entered more than 70 characters")       // Showing Alert to user if Entered 70 Char or more 
+        alert("You entered more than 70 character!!!...")       // Showing Alert to user if entered 70 Char or more 
     }
 }
 
-// Creat a function that takes the user input (new task) and add it to the empty array theAllTasksArray
+// Create a function that takes the user input (new task) and add it to the empty array theAllTasksArray
 function myNewTasks(theCtask) {
     // Creat object to Hold the Task Data and give each one a random ID
     let newTaskData = {
@@ -54,7 +54,7 @@ function myNewTasks(theCtask) {
     addTasksToLS(theAllTasksArray);
 }
 
-// Creat The function that showing the tasks on the page
+// Create The function that showing the tasks on the page
 function showTasksOnPage(theTasks) {
     // Empty div to avoid the repetition of add same task
     myAllTasks.innerHTML = "";
@@ -105,7 +105,7 @@ function addTasksToLS(theTasks) {
     window.localStorage.setItem("my-tasks", JSON.stringify(theTasks));
 }
 
-// Creat Function that getting the Data/Tasks from Local Storage
+// Create Function that getting the Data/Tasks from Local Storage
 function getTasksFromLS() {
     let myTasks = window.localStorage.getItem("my-tasks");
     if (myTasks) {
@@ -129,7 +129,7 @@ myAllTasks.addEventListener("click", function (myDel) {
     }
 })
 
-// Creat a Function to Delete the related task from Local Storage
+// Create a Function to Delete the related task from Local Storage
 function removeTaskFromLS(theTask) {
     theAllTasksArray = theAllTasksArray.filter(function (newTaskData) {
         return newTaskData.id != theTask;
