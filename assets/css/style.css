@@ -92,7 +92,6 @@ body {
     letter-spacing: 2.5px;
 }
 
-
 /* Start Media Rules to index.html page */
 /* Set simple media rules till screens size: max-width = 530px */
 @media screen and (max-width: 530px) {
@@ -129,8 +128,8 @@ body {
     letter-spacing: 2px;
 }
 
-/* Add Media query till width: 405px */
-@media screen and (max-width: 405px) {
+/* Add Media query till width: 480px */
+@media screen and (max-width: 480px) {
     .main-container h3 {
         font-size: 10px;
     }
@@ -229,7 +228,6 @@ and I will copy some rules from previous start button rules and make some change
     .my-all-tasks .del-btn {
         margin-top: 15px;
     }
-
 }
 
 /* Targets Each button inside each new task added inside the main div with class (.my-all-tasks) */
