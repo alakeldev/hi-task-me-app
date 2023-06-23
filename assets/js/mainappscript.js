@@ -1,138 +1,126 @@
-// declare Variables and set their values from the elements inside todolistpage.html
+// Declare the variables and Set their values from the elements inside todolistpage.html
 let exitBtn = document.getElementById("exit-btn"),
     taskInput = document.getElementById("my-task"),
     addTaskBtn = document.querySelector(".add-btn"),
     myAllTasks = document.querySelector(".my-all-tasks");
 
-// Create a function works after page loaded that make auto focus on the input(new task field).
-window.onload = function () {
+// Add event listener ("load") so after page fully loaded it's running a function that make auto focus on the input(new task field).
+window.addEventListener("load", function () {
     taskInput.focus();
-};
+});
 
-/* Add event listener (click) that proceed with a function to exit the main page app when the user clicked
-on the Exit button and lead the user to (see you later page) */
+// Add event listener ("click") so after clicked on Exit button it's running a function that leads the user to "see you later" page.
 exitBtn.addEventListener("click", function () {
     window.open("seeyoulater.html", "_self");
 });
 
-// Create new Empty Array to Add and Store the new Tasks one after one
+// Create new Empty Array to Add and Store the new Tasks in it one after one
 let theAllTasksArray = [];
 
-// check if the local storage has tasks stored inside it / if found tasks inside it so it will set those tasks to theAllTasksArray(array)
+// check if the local storage has tasks stored inside it. And if it has tasks so it will set those tasks to theAllTasksArray (array).
 if (window.localStorage.getItem("my-tasks")) {
     theAllTasksArray = JSON.parse(window.localStorage.getItem("my-tasks"));
-}
+};
 
-/* Call getTasksFromLS function - that takes the data from local storage also inside this function we call 
-another function that showing these data/tasks on the page */
+// Call a Function that takes the data from local storage.
 getTasksFromLS();
 
-// addNewTask button -  Anonymous Function will proceed when the user click on the add new task button
-addTaskBtn.onclick = function () {
-    if (taskInput !== "" && taskInput.value.length < 70) {  //If condition checking the new task input that is not empty and less than 70 char 
-        myNewTasks(taskInput.value);   // Call function that take the user input value ( new task) as an argument
-        taskInput.value = "";          // to Empty the input field after taking its value related to code in previous line
+/* Add event listener ("click") so after clicked on Add New Task Button it's running a function 
+(to check on input field that isnot empty and the user entered 70 Characters or less, also showing alert if entered more */
+addTaskBtn.addEventListener("click", function () {
+    if (taskInput !== "" && taskInput.value.length < 71) {
+        myNewTasks(taskInput.value);
+        taskInput.value = "";
     } else {
-        alert("You entered more than 70 character!!!...")       // Showing Alert to user if entered 70 Char or more 
+        alert("You entered more than 70 character!!!...Please Enter Less Than 70 Character");
     }
-}
+});
 
-// Create a function that takes the user input (new task) and add it to the empty array theAllTasksArray
+// Create a function that takes the user input (new task) and add/push it to the theAllTasksArray / Also Call Two functions inside it
 function myNewTasks(theCtask) {
-    // Creat object to Hold the Task Data and give each one a random ID
     let newTaskData = {
-        id: Math.floor(Math.random() * 1e7),             // the ID random number
-        content: theCtask,                               // the new task content (it comes from the new task input field(value))
+        id: Math.floor(Math.random() * 1e7),
+        content: theCtask,
     };
-    // Add the new Task to the array (theAllTasksArray) and store it with its random ID
-    if (newTaskData.content !== "") {     // I added this condition because the empty content task was added only on local storage
-        theAllTasksArray.push(newTaskData);    // and I don't want to added it empty if the input new task field(content) was empty!!
+    if (newTaskData.content !== "") {
+        theAllTasksArray.push(newTaskData);
     }
-    // call the showTasksOnPage function that showing insde myAllTasks div each task added. (all inside the main page App)
-    showTasksOnPage(theAllTasksArray);
-    // call the addTasksToLocalStorage function that showing and adding the Tasks to Local Storage (LS).
-    addTasksToLS(theAllTasksArray);
-}
+    showTasksOnPage(theAllTasksArray);   // Call Function(Show the tasks on page) and set its argument theAllTasksArray
+    addTasksToLS(theAllTasksArray);      // Call Function(Add the tasks to LS) and set its argument theAllTasksArray
+};
 
-// Create The function that showing the tasks on the page
+// Create Function shows the tasks on the page(Creating new Elements and set its attributes & values)
 function showTasksOnPage(theTasks) {
-    // Empty div to avoid the repetition of add same task
     myAllTasks.innerHTML = "";
-    // make looping on the array of tasks
     theTasks.forEach((newTaskData) => {
-        // Create main div to contain each new added task
         let eachTaskDiv = document.createElement("div");
-        eachTaskDiv.className = "the-new-task";             // set value to class attribute in the previous div
-        // Create custome attribute and set its value from random id of the newTaskData Object
+        eachTaskDiv.className = "the-new-task";
         eachTaskDiv.setAttribute("task-id", newTaskData.id);
-        // Create Variable that store the text task content from the newTaskData Object
         let taskTextContent = document.createTextNode(newTaskData.content);
-        // add the text task content to the new created div
         eachTaskDiv.appendChild(taskTextContent);
 
-        // Create Delete Button after check that the new tesk input is not empty
-        if (newTaskData.content !== "") {
+        if (newTaskData.content !== "") {    // Condition to Create delete button if (taskInput.value) new task field isn't empty.
             let delBtn = document.createElement("input");
-            delBtn.className = "del-btn";                   // set value to class attribute in delete button
-            delBtn.setAttribute("type", "submit");          // set value for type attribute in delete button
-            delBtn.setAttribute("value", "Delete");         // set value for value attribute in delete button
-            // Add the delete button (input type:submit) inside the main created div (eachTaskDiv)
+            delBtn.className = "del-btn";
+            delBtn.setAttribute("type", "submit");
+            delBtn.setAttribute("value", "Delete");
             eachTaskDiv.appendChild(delBtn);
-            // Add the created div(eachTaskDiv) to the Tasks div (Main Container)
             myAllTasks.appendChild(eachTaskDiv);
         }
-        taskInput.focus();  // Auto focus again on the input(new task field) after showed/added the new task on page
+        taskInput.focus();
     });
-    if (theAllTasksArray.length >= 2) {     // Condition to check if theAllTasksArray has two tasks or more to Create/Show the clear all button
+
+    if (theAllTasksArray.length >= 2) {    // Condition to Create/Show clear all button if theAllTasksArray has two tasks or more.
         let clearAllBtn = document.createElement("input");
-        clearAllBtn.classList = "clear-all-btn";            // set value to class attribute in clear all button
-        clearAllBtn.setAttribute("type", "submit");         // set value to type attribute in clear all button
-        clearAllBtn.setAttribute("value", "Clear All");     // set value to value attribute in clear all button
-        // Add the Clear All button (input type: submit) to the Tasks div (Main Container)
+        clearAllBtn.classList = "clear-all-btn";
+        clearAllBtn.setAttribute("type", "submit");
+        clearAllBtn.setAttribute("value", "Clear All");
         myAllTasks.appendChild(clearAllBtn);
 
-        // Add event listener on click to proceed with a fucntion to delete all display tasks also clear the local storage and the array too
+        /* Add event listener ("click") so after clicked clear all button it's running a fucntion:
+        Empty myAllTasks div - Empty LS - Empty theAllTasksArray */
         clearAllBtn.addEventListener("click", function () {
-            myAllTasks.innerHTML = "";              // Empty the main div (myAllTasks)
-            window.localStorage.clear();            // Empty the Local Storage
-            theAllTasksArray = [];                  // Empty the Tasks Array itself
+            myAllTasks.innerHTML = "";
+            window.localStorage.clear();
+            theAllTasksArray = [];
         });
-    }
-}
+    };
+};
 
-// Create Function that adding the tasks to Local Storage
+// Create Function for adding the tasks to LS
 function addTasksToLS(theTasks) {
     window.localStorage.setItem("my-tasks", JSON.stringify(theTasks));
-}
+};
 
-// Create Function that getting the Data/Tasks from Local Storage
+// Create Function for getting the Data/Tasks from LS
 function getTasksFromLS() {
     let myTasks = window.localStorage.getItem("my-tasks");
     if (myTasks) {
         let tasks = JSON.parse(myTasks);
-        showTasksOnPage(tasks);   // call function that showing the tasks but set its parameter the data/tasks from local storage
-    }
-}
 
-//Add event listener on click to proceed with a Function to make each delete button on each added task is working and removing the related task
+        showTasksOnPage(tasks);   // Call a function that shows the tasks with its parameter (the data/tasks from LS)
+    };
+};
+
+/* Add event listener ("click") it's running a function with its Parameter to check on and target 
+the element with class ("del-btn") to remove its parent from Page and LS.  Hide the clear all button through if condition */
 myAllTasks.addEventListener("click", function (myDel) {
-    if (myDel.target.classList.contains("del-btn")) {       // Check if it's delete button
-        myDel.target.parentElement.remove();    // Remove the task => the parent element of delete button {the div with class (".the-new-task")}
+    if (myDel.target.classList.contains("del-btn")) {
+        myDel.target.parentElement.remove();
 
-        removeTaskFromLS(myDel.target.parentElement.getAttribute("task-id"));   //Call function to remove the Task from Local Storage
-    }
-
-    /* Condition to check if theAllTasksArray reached to one task or none (&&) and the clear all button is already exist 
-    (to hide the clear all button) */
+        // Call a function that remove the tasks from LS and its argument is the value of "task-id" attribute (Parent Element of del-btn)
+        removeTaskFromLS(myDel.target.parentElement.getAttribute("task-id"));
+    };
     if (theAllTasksArray.length <= 1 && document.querySelector(".clear-all-btn")) {
-        document.querySelector(".clear-all-btn").style.display = "none";         // set Clear All button (display: none;)
-    }
-})
+        document.querySelector(".clear-all-btn").style.display = "none";
+    };
+});
 
-// Create a Function to Delete the related task from Local Storage
+/* Create a Function with parameter to remove the tasks from LS through set the new value to theAllTasksArray with 
+filter method that's running function with parameter(the Obj) and return obj.(id) is not equal to main fun parameter */
 function removeTaskFromLS(theTask) {
     theAllTasksArray = theAllTasksArray.filter(function (newTaskData) {
         return newTaskData.id != theTask;
     });
-    addTasksToLS(theAllTasksArray);     // the new value of array pass as an argument to update the tasks on LS
-}
+    addTasksToLS(theAllTasksArray);     // Call addTasksToLS function and its argument the new value of theAllTasksArray
+};
