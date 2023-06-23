@@ -32,7 +32,7 @@ addTaskBtn.addEventListener("click", function () {
         myNewTasks(taskInput.value);
         taskInput.value = "";
     } else {
-        alert("You entered more than 70 character!!!...Please Enter Less Than 70 Character");
+        alert("You entered more than 70 character!!!...You can only Enter up to 70 Character");
     }
 });
 
