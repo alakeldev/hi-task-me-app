@@ -26,13 +26,18 @@ if (window.localStorage.getItem("my-tasks")) {
 getTasksFromLS();
 
 /* Add event listener ("click") so after clicked on Add New Task Button it's running a function 
-(to check on input field that isnot empty and the user entered 70 Characters or less, also showing alert if entered more */
+(to check on input field with if and else if conditions and showing alert message related to each status or to go further) */
 addTaskBtn.addEventListener("click", function () {
-    if (taskInput !== "" && taskInput.value.length < 71) {
+    if (taskInput.value === "") {
+        alert("Sorry! Please Enter Your Task Before push The Add Button =)");
+        taskInput.focus();
+    } else if (taskInput.value.length > 70) {
+        alert("Sorry! But You Can Only Enter Up To 70 Character =)");
+        taskInput.value = "";
+        taskInput.focus();
+    } else if (taskInput.value !== "" && taskInput.value.length < 71) {
         myNewTasks(taskInput.value);
         taskInput.value = "";
-    } else {
-        alert("You entered more than 70 character!!!...You can only Enter up to 70 Character");
     }
 });
 
