@@ -88,6 +88,7 @@ function showTasksOnPage(theTasks) {
             myAllTasks.innerHTML = "";
             window.localStorage.clear();
             theAllTasksArray = [];
+            taskInput.focus();
         });
     };
 };
@@ -115,6 +116,8 @@ myAllTasks.addEventListener("click", function (myDel) {
 
         // Call a function that remove the tasks from LS and its argument is the value of "task-id" attribute (Parent Element of del-btn)
         removeTaskFromLS(myDel.target.parentElement.getAttribute("task-id"));
+
+        taskInput.focus();
     };
     if (theAllTasksArray.length <= 1 && document.querySelector(".clear-all-btn")) {
         document.querySelector(".clear-all-btn").style.display = "none";
