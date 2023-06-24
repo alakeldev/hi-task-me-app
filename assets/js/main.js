@@ -64,14 +64,13 @@ function showTasksOnPage(theTasks) {
         let taskTextContent = document.createTextNode(newTaskData.content);
         eachTaskDiv.appendChild(taskTextContent);
 
-        if (newTaskData.content !== "") {    // Condition to Create delete button if (taskInput.value) new task field isn't empty.
-            let delBtn = document.createElement("input");
-            delBtn.className = "del-btn";
-            delBtn.setAttribute("type", "submit");
-            delBtn.setAttribute("value", "Delete");
-            eachTaskDiv.appendChild(delBtn);
-            myAllTasks.appendChild(eachTaskDiv);
-        }
+        let delBtn = document.createElement("input");
+        delBtn.className = "del-btn";
+        delBtn.setAttribute("type", "submit");
+        delBtn.setAttribute("value", "Delete");
+        eachTaskDiv.appendChild(delBtn);
+        myAllTasks.appendChild(eachTaskDiv);
+
         taskInput.focus();
     });
 
