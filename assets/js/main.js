@@ -41,6 +41,13 @@ addTaskBtn.addEventListener("click", function () {
     }
 });
 
+// Add event listener("keydown")The Enter button on keyboard that will behaviour same as you press on add new task button through mouse cursor.
+taskInput.addEventListener("keydown", function (enterKey) {
+    if (enterKey.key === "Enter") {
+        addTaskBtn.click();
+    }
+});
+
 // Create a function that takes the user input (new task) and add/push it to the theAllTasksArray / Also Call Two functions inside it.
 function myNewTasks(theCtask) {
     let newTaskData = {

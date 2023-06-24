@@ -2,6 +2,11 @@
 let startBtn = document.getElementById("start-btn"),
     closeBtn = document.getElementById("close-btn");
 
+// Add event listener ("load") so after page fully loaded it's running a function that make auto focus on the start button.
+window.addEventListener("load", function () {
+    startBtn.focus();
+});
+
 // Add event listener ("click") so after clicked on start button it's running a function that open the next app page.
 startBtn.addEventListener("click", function () {
     window.open("todolistpage.html", "_self");
