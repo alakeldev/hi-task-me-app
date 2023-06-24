@@ -29,7 +29,7 @@ getTasksFromLS();
 (to check on input field with if and else if conditions and showing alert message related to each status or to go further) */
 addTaskBtn.addEventListener("click", function () {
     if (taskInput.value === "") {
-        alert("Sorry! Please Enter Your Task Before push The Add Button =)");
+        alert("Sorry! Please Enter Your Task Before Click On Add Task Button =)");
         taskInput.focus();
     } else if (taskInput.value.length > 70) {
         alert("Sorry! But You Can Only Enter Up To 70 Character =)");
@@ -54,7 +54,7 @@ function myNewTasks(theCtask) {
     addTasksToLS(theAllTasksArray);      // Call Function(Add the tasks to LS) and set its argument theAllTasksArray
 };
 
-// Create Function shows the tasks on the page(Creating new Elements and set its attributes & values)
+// Create Function shows the tasks on the page(Creating new Elements and set for each element its attributes & values)
 function showTasksOnPage(theTasks) {
     myAllTasks.innerHTML = "";
     theTasks.forEach((newTaskData) => {
@@ -92,7 +92,7 @@ function showTasksOnPage(theTasks) {
     };
 };
 
-// Create Function for adding the tasks to LS
+// Create Function to add the tasks to LS
 function addTasksToLS(theTasks) {
     window.localStorage.setItem("my-tasks", JSON.stringify(theTasks));
 };
@@ -108,7 +108,7 @@ function getTasksFromLS() {
 };
 
 /* Add event listener ("click") it's running a function with its Parameter to check on and target 
-the element with class ("del-btn") to remove its parent from Page and LS.  Hide the clear all button through if condition */
+the element with class ("del-btn") to remove its parent from Page and LS. - Also hide the clear all button through if condition */
 myAllTasks.addEventListener("click", function (myDel) {
     if (myDel.target.classList.contains("del-btn")) {
         myDel.target.parentElement.remove();
