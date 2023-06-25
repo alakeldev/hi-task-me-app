@@ -3,7 +3,7 @@
 
 /* Set Global Scope Variables for some properties that i'm gonna use it continuously */
 :root {
-    --main-background-color: #000000cc;
+    --main-background-color: #333333;
     --border-radius-main-value: 20px;
     --border-radius-for-buttons: 10px;
 }
@@ -40,7 +40,7 @@ body {
     text-align: center;
     background-color: #f0f0f0;
     border-radius: var(--border-radius-main-value);
-    box-shadow: 0 0 20px black inset;
+    box-shadow: 0 0 20px #000000 inset;
 }
 
 /* Targets the img inside the inside container and set below css rules to it */
@@ -67,7 +67,7 @@ body {
     right: 15px;
     bottom: -10px;
     background-color: var(--main-background-color);
-    color: white;
+    color: #ffffff;
     border-radius: var(--border-radius-for-buttons);
     text-transform: uppercase;
     box-shadow: 0 0 20px #41ead4 inset;
@@ -83,7 +83,7 @@ body {
     left: 15px;
     bottom: -10px;
     background-color: var(--main-background-color);
-    color: white;
+    color: #ffffff;
     border-radius: var(--border-radius-for-buttons);
     text-transform: uppercase;
     box-shadow: 0 0 20px #ff206e inset;
@@ -124,7 +124,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #ffffff;
     letter-spacing: 2px;
 }
 
@@ -151,7 +151,7 @@ in this field i will write my new task. set below css rules */
     padding: 15px;
     width: 100%;
     margin: 15px auto;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #cdcbcc;
     border-radius: var(--border-radius-main-value);
 }
 
@@ -168,7 +168,7 @@ and I will copy some rules from previous start button rules and make some change
     display: block;
     margin: auto;
     background-color: var(--main-background-color);
-    color: white;
+    color: #ffffff;
     border-radius: var(--border-radius-for-buttons);
     box-shadow: 0 0 20px #41ead4 inset;
     cursor: pointer;
@@ -182,7 +182,7 @@ and I will copy some rules from previous start button rules and make some change
     display: block;
     margin-left: auto;
     background-color: var(--main-background-color);
-    color: white;
+    color: #ffffff;
     border-radius: var(--border-radius-for-buttons);
     box-shadow: 0 0 20px #ff206e inset;
     cursor: pointer;
@@ -193,7 +193,7 @@ and I will copy some rules from previous start button rules and make some change
 /* Targets The div that will show and contain the added tasks and set below css rules */
 .my-all-tasks {
     margin-top: 30px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: var(--border-radius-main-value);
     padding: 20px;
 }
@@ -235,10 +235,10 @@ and I will copy some rules from previous start button rules and make some change
     width: 60px;
     height: 30px;
     border-radius: var(--border-radius-for-buttons);
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     letter-spacing: 1px;
-    background-color: black;
+    background-color: #000000;
     box-shadow: 0 0 30px #ff206e inset;
 }
 
@@ -249,12 +249,12 @@ and I will copy some rules from previous start button rules and make some change
     display: block;
     margin: auto;
     background-color: #333333;
-    color: red;
+    color: #ff206e;
     border-radius: var(--border-radius-for-buttons);
     cursor: pointer;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    border-color: red;
+    border-color: #ff206e;
 }
 
 /* End todolistpage.html Page css rulse */
