@@ -29,10 +29,10 @@ getTasksFromLS();
 (to check on input field with if and else if conditions and showing alert message related to each status or to go further). */
 addTaskBtn.addEventListener("click", function () {
     if (taskInput.value === "") {
-        alert("Sorry! Please Enter Your Task Before Click On Add Task Button =)");
+        alert("Sorry! Please Enter Your Task in The Empty Field Before Click On Add Task Button =)");
         taskInput.focus();
     } else if (taskInput.value.length > 70) {
-        alert("Sorry! But You Can Only Enter Up To 70 Character =)");
+        alert("Sorry! But You Can Only Enter Up To 70 Characters =)");
         taskInput.value = "";
         taskInput.focus();
     } else if (taskInput.value !== "" && taskInput.value.length < 71) {
