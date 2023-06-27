@@ -133,6 +133,10 @@ body {
     .main-container h3 {
         font-size: 10px;
     }
+    canvas  {
+        width: 100px; 
+        height: 100px;
+    }
 }
 
 /* Targets Canvas Element inside the seeyoulater page */
