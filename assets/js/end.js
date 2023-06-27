@@ -4,7 +4,7 @@ let smileFace = document.getElementById("smile-face"),
 
 // Main yellow face design - Full Circle as it'S Math.PI * 2.
 theContext.beginPath();
-theContext.fillStyle = "#FFEA00";
+theContext.fillStyle = "#41ead4";
 theContext.arc(smileFace.width / 2, smileFace.height / 2, 80, 0, Math.PI * 2);
 theContext.fill()
 
@@ -42,6 +42,6 @@ theContext.fill();
 theContext.beginPath();
 theContext.moveTo(smileFace.width / 2, smileFace.height / 2);
 theContext.lineTo(smileFace.width / 2, (smileFace.height / 2) - 15);
-theContext.strokeStyle = "#41ead4";
+theContext.strokeStyle = "#FFFFFF";
 theContext.lineWidth = 3;
 theContext.stroke();
