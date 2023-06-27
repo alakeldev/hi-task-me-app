@@ -135,6 +135,14 @@ body {
     }
 }
 
+/* Targets Canvas Element inside the seeyoulater page */
+canvas {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
 /* End seeyoulater.html page CSS rules / it's Media Rules too */
 
 /* Start todolistpage.html page css rulse */
