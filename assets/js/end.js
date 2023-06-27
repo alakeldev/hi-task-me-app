@@ -15,7 +15,7 @@ theContext.fill()
 // The Mouth inside the yellow face - Half Circle as it's Math.PI
 theContext.beginPath();
 theContext.fillStyle = "#FFFFFF";
-theContext.arc(smileFace.width / 2, smileFace.height / 2, 60, 0, Math.PI);
+theContext.arc(smileFace.width / 2, (smileFace.height / 2) + 10, 60, 0, Math.PI);
 theContext.fill();
 
 // The Right Eye - Full Circle as it's Math.PI * 2
@@ -41,3 +41,12 @@ theContext.beginPath();
 theContext.fillStyle = "#41ead4";
 theContext.arc((smileFace.width / 2) - 35, (smileFace.height / 2) - 35, 3, 0, Math.PI * 2);
 theContext.fill();
+
+
+// The Nose inside the face - Simple Small Line (stroke style) in the mid of the face ( Set the start positions(x,y) Also the Path points (x,y) )
+theContext.beginPath();
+theContext.moveTo(smileFace.width / 2, smileFace.height / 2 );
+theContext.lineTo(smileFace.width / 2, (smileFace.height / 2) - 15);
+theContext.strokeStyle = "#41ead4";
+theContext.lineWidth = 3;
+theContext.stroke();
