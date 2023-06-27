@@ -131,11 +131,11 @@ body {
 /* Add Media query till width: 480px */
 @media screen and (max-width: 480px) {
     .main-container h3 {
-        font-size: 10px;
+        font-size: 12px;
     }
     canvas  {
-        width: 100px; 
-        height: 100px;
+        width: 150px; 
+        height: 150px;
     }
 }
 
