@@ -29,3 +29,15 @@ theContext.beginPath();
 theContext.fillStyle = "#41ead4";
 theContext.arc((smileFace.width / 2) + 35, (smileFace.height / 2) - 35, 3, 0, Math.PI * 2);
 theContext.fill();
+
+// The left Eye - Full Circle as it's Math.PI * 2
+theContext.beginPath();
+theContext.fillStyle = "#FFFFFF";
+theContext.arc((smileFace.width / 2) - 35, (smileFace.height / 2) - 35, 12, 0, Math.PI * 2);
+theContext.fill();
+
+// Pupil inside the left Eye - Full circle as it's Math.PI * 2
+theContext.beginPath();
+theContext.fillStyle = "#41ead4";
+theContext.arc((smileFace.width / 2) - 35, (smileFace.height / 2) - 35, 3, 0, Math.PI * 2);
+theContext.fill();
