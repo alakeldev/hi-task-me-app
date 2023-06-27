@@ -6,3 +6,9 @@ let smileFace = document.getElementById("smile-face"),
 theContext.fillStyle = "#333333";
 theContext.fillRect(0, 0, smileFace.width, smileFace.height);
 
+// Main yellow face design - Full Circle as it'S Math.PI * 2.
+theContext.beginPath();
+theContext.fillStyle = "#FFEA00";
+theContext.arc(smileFace.width / 2, smileFace.height / 2, 80, 0, Math.PI * 2);
+theContext.fill()
+
