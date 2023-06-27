@@ -258,3 +258,60 @@ and I will copy some rules from previous start button rules and make some change
 }
 
 /* End todolistpage.html Page css rulse */
+
+/* Start 404.html page CSS rules / its Media Rules too */
+/* Targets the h1 inside div with class (.main-container) */
+.main-container h1 {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+/* Targets the h4 inside div with class (.main-container) */
+.main-container h4 {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+/* Targets the span inside h4 and both inside div with class (.main-container) */
+.main-container h4 span {
+    color: #ff206e;
+}
+
+/* Targets the h5 inside div with class (.main-container) */
+.main-container h5 {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+/* Targets the a link element inside h5 and both are inside div with class (.main-container) */
+.main-container h5 a {
+    color: #41ead4;
+    padding-right: 8px;
+}
+
+/* Add Media query till width: 522px */
+@media screen and (max-width: 522px) {
+
+    .main-container h1,
+    .main-container h4 {
+        font-size: 15px;
+    }
+
+    .main-container h5 {
+        font-size: 10px;
+    }
+}
+
+/* End 404.html page CSS rules / its Media Rules too */
