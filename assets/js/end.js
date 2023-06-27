@@ -12,3 +12,9 @@ theContext.fillStyle = "#FFEA00";
 theContext.arc(smileFace.width / 2, smileFace.height / 2, 80, 0, Math.PI * 2);
 theContext.fill()
 
+// The Mouth inside the yellow face - Half Circle as it's Math.PI
+theContext.beginPath();
+theContext.fillStyle = "#FFFFFF";
+theContext.arc(smileFace.width / 2, smileFace.height / 2, 60, 0, Math.PI);
+theContext.fill();
+
