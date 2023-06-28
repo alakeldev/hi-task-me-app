@@ -6,7 +6,7 @@ The to-do List App is live, please [Click Here](https://alakeldev.github.io/to-d
 
 ![Site view across devices](assets/readme-images/todolistapp-amiresponsive.png)
 
-Also you can check the App on "Am I Responsive!" Website By [Clicking Here](https://ui.dev/amiresponsive?url=https://alakeldev.github.io/to-do-list-pp2/) or on "Responsive Design Checker" Website By [Clicking Here](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Falakeldev.github.io%2Fto-do-list-pp2%2F&width=1400&height=700).
+Also you can check the App on "Am I Responsive!" Website By [Clicking Here](https://ui.dev/amiresponsive?url=https://alakeldev.github.io/to-do-list-pp2/) - and on "Responsive Design Checker" Website By [Clicking Here](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Falakeldev.github.io%2Fto-do-list-pp2%2F&width=1400&height=700).
 
 ## Tabel of Contents
 - [Tabel of Contents](#tabel-of-contents)
@@ -126,28 +126,46 @@ Our 404 page has a simple design that displays the application title and error d
      ![W3C html validator Index page](assets/readme-images/index-page-checker.png)
   -  Result for todolistpage.html
 
-     ![W3C html validator Gallery page](assets/readme-images/mainapp-page-checker.png)
+     ![W3C html validator Main App page](assets/readme-images/mainapp-page-checker.png)
   -  Result for seeyoulater.html
 
-     ![W3C html validator Missions page](assets/readme-images/seeyoulater-checker.png)
+     ![W3C html validator See You Later page](assets/readme-images/seeyoulater-checker.png)
 
 - CSS (By using [Jigsaw validator](https://jigsaw.w3.org/css-validator/))
   - Result for style.css
 
-     ![Jigsaw validator message](assets/readme-images/css-checker.png)
-  
+     ![Jigsaw validator Result](assets/readme-images/css-checker.png)
+
+- JavaScript (By using [jshint](https://jshint.com/))
+
+  - Result for start.js
+
+    ![jshint start.js](assets/readme-images/start.png)
+  - Result for main.js
+
+    ![jshint main.js](assets/readme-images/main.png)
+  - Result for end.js
+
+    ![jshint end.js](assets/readme-images/end.png)
+
 - Lighthouse Testing (By using the Lighthouse feature of Google Chrome's Developer Tools)
   - Result for index.html
 
      ![lighthouse index page](assets/readme-images/index-lighthouse.png)
   - Result for todolistpage.html
 
-     ![lighthouse index page](assets/readme-images/todolistpage-lighthouse.png)
+     ![lighthouse Main App page](assets/readme-images/todolistpage-lighthouse.png)
   - Result for seeyoulater.html
 
-     ![lighthouse index page](assets/readme-images/seeyoulater-lighthouse.png)
+     ![lighthouse See You Later page](assets/readme-images/seeyoulater-lighthouse.png)
+
+- Accessibilty (By using [WAVE](https://wave.webaim.org/))
+  - The image below shows that there are only two alerts displayed in all app pages:
+
+    ![Accessibilty WAVE all App Pages](assets/readme-images/wave.png)
 
 ### Unfixed Bugs
+
 
 ## Technologies Used
 ### Main Languages Used
@@ -161,7 +179,7 @@ Our 404 page has a simple design that displays the application title and error d
 - VS-Code - to creat the html files, CSS styling sheet file and JS files before pushing the project to Github.
 - GitHub - to store my repository and deployed live link for submission.
 - Balsamiq-wireframes - was used to imagine the basic structure of the app without any styling.
-- (Am I Responsive?) && (ResponsiveDesignChecker) - to ensure the project-App is looked good across all devices.
+- (Am I Responsive?) & (ResponsiveDesignChecker) - to ensure the project-App is looked good across all devices.
 - favicon.io - to change the png format to favicon format.
 - Google Chrome - "Developer Tools, Console, Local Storage" to Monitor my code and check the errors along the way.
 

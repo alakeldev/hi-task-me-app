@@ -6,7 +6,7 @@ let smileFace = document.getElementById("smile-face"),
 theContext.beginPath();
 theContext.fillStyle = "#41ead4";
 theContext.arc(smileFace.width / 2, smileFace.height / 2, 80, 0, Math.PI * 2);
-theContext.fill()
+theContext.fill();
 
 // The Mouth inside the face - Half Circle as it's Math.PI
 theContext.beginPath();

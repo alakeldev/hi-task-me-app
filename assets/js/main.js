@@ -20,7 +20,7 @@ let theAllTasksArray = [];
 // check if the local storage has tasks stored inside it. And if it has tasks so it will set those tasks to theAllTasksArray (array).
 if (window.localStorage.getItem("my-tasks")) {
     theAllTasksArray = JSON.parse(window.localStorage.getItem("my-tasks"));
-};
+}
 
 // Call a Function that takes the data from local storage.
 getTasksFromLS();
@@ -59,7 +59,7 @@ function myNewTasks(theCtask) {
     }
     showTasksOnPage(theAllTasksArray);   // Call Function(Show the tasks on page) and set/pass argument theAllTasksArray.
     addTasksToLS(theAllTasksArray);      // Call Function(Add the tasks to LS) and set/pass argument theAllTasksArray.
-};
+}
 
 // Create Function shows the tasks on the page(Creating new Elements and set for each element its attributes & values).
 function showTasksOnPage(theTasks) {
@@ -96,13 +96,13 @@ function showTasksOnPage(theTasks) {
             theAllTasksArray = [];
             taskInput.focus();
         });
-    };
-};
+    }
+}
 
 // Create Function to add the tasks to LS.
 function addTasksToLS(theTasks) {
     window.localStorage.setItem("my-tasks", JSON.stringify(theTasks));
-};
+}
 
 // Create Function for getting the Data/Tasks from LS.
 function getTasksFromLS() {
@@ -111,8 +111,8 @@ function getTasksFromLS() {
         let tasks = JSON.parse(myTasks);
 
         showTasksOnPage(tasks);   // Call a function that shows the tasks with set/pass argument (the data/tasks from LS).
-    };
-};
+    }
+}
 
 /* Add event listener ("click") it's running a function with its Parameter to check on and target 
 the element with class ("del-btn") to remove its parent from Page and LS. - Also hide the clear all button through if condition. */
@@ -124,10 +124,10 @@ myAllTasks.addEventListener("click", function (myDel) {
         removeTaskFromLS(myDel.target.parentElement.getAttribute("task-id"));
 
         taskInput.focus();
-    };
+    }
     if (theAllTasksArray.length <= 1 && document.querySelector(".clear-all-btn")) {
         document.querySelector(".clear-all-btn").style.display = "none";
-    };
+    }
 });
 
 /* Create a Function with parameter to remove the tasks from LS through set the new value to theAllTasksArray with 
@@ -137,4 +137,4 @@ function removeTaskFromLS(theTask) {
         return newTaskData.id != theTask;
     });
     addTasksToLS(theAllTasksArray);     // Call addTasksToLS function and set/pass the argument (the new value of theAllTasksArray).
-};
+}
