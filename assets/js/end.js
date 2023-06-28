@@ -2,13 +2,13 @@
 let smileFace = document.getElementById("smile-face"),
     theContext = smileFace.getContext("2d");
 
-// Main yellow face design - Full Circle as it'S Math.PI * 2.
+// Main face design - Full Circle as it'S Math.PI * 2.
 theContext.beginPath();
 theContext.fillStyle = "#41ead4";
 theContext.arc(smileFace.width / 2, smileFace.height / 2, 80, 0, Math.PI * 2);
 theContext.fill()
 
-// The Mouth inside the yellow face - Half Circle as it's Math.PI
+// The Mouth inside the face - Half Circle as it's Math.PI
 theContext.beginPath();
 theContext.fillStyle = "#FFFFFF";
 theContext.arc(smileFace.width / 2, (smileFace.height / 2) + 10, 60, 0, Math.PI);
@@ -45,3 +45,6 @@ theContext.lineTo(smileFace.width / 2, (smileFace.height / 2) - 15);
 theContext.strokeStyle = "#FFFFFF";
 theContext.lineWidth = 3;
 theContext.stroke();
+
+/* I set all the methods for (x,y) values in a dynamic way because of media rules inside the CSS file 
+that are going to reduce the width and height of the main canvas. */ 
