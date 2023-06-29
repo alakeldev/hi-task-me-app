@@ -191,7 +191,7 @@ This page is designed to be simple and straightforward, displaying only the appl
 - In the GitHub repository, navigate to the Settings tab
 - From the source section drop-down menu, select the main Branch
 - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-- The live link can be found Here [to-do List App](https://alakeldev.github.io/to-do-list-pp2/)
+- The live link can be found Here [to-do List](https://alakeldev.github.io/to-do-list-pp2/)
 
  ### How to clone
 - Go to the following repository on GitHub: https://github.com/alakeldev/to-do-list-pp2
