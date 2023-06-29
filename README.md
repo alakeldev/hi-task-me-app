@@ -1,12 +1,14 @@
 <h1 align="center">📝 To Do List App 📝</h1>
 
-This is a simple to-do list application that allows you to keep track of your tasks and monitor your daily progress on any project or task. It can also help you remember the pending ones.
+This is a simple to-do list application that helps you keep track of your tasks and monitor your daily progress on any project or task. It can also help you remember any pending tasks. With this application, you can easily create and manage your to-do lists set prioritize your work. Whether you’re working on a personal project or even you daily tasks, this application can help you stay organized and focused.
 
 The to-do List App is live, please [Click Here](https://alakeldev.github.io/to-do-list-pp2/) to check It.
 
 ![Site view across devices](assets/readme-images/todolistapp-amiresponsive.png)
 
-Also you can check the App on "Am I Responsive!" Website By [Clicking Here](https://ui.dev/amiresponsive?url=https://alakeldev.github.io/to-do-list-pp2/) - and on "Responsive Design Checker" Website By [Clicking Here](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Falakeldev.github.io%2Fto-do-list-pp2%2F&width=1400&height=700).
+You can check the App on "Am I Responsive!" Website By [Clicking Here](https://ui.dev/amiresponsive?url=https://alakeldev.github.io/to-do-list-pp2/).
+
+Also you can check it on "Responsive Design Checker" Website too By [Clicking Here](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Falakeldev.github.io%2Fto-do-list-pp2%2F&width=1400&height=700).
 
 ## Tabel of Contents
 - [Tabel of Contents](#tabel-of-contents)
@@ -106,7 +108,7 @@ When users press the exit button on the main page of our to-do list application,
 
 #### 404 page
 
-Our 404 page has a simple design that displays the application title and error description. Additionally, there is a small text with a link that guides users back to the start page of the application.
+This page is designed to be simple and straightforward, displaying only the application title and error description. Additionally, it includes a small text with a link that guides users back to the start page of the application.
 
 ![404 Page](assets/readme-images/404.png)
 

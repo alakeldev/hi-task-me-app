@@ -133,8 +133,9 @@ body {
     .main-container h3 {
         font-size: 12px;
     }
-    canvas  {
-        width: 150px; 
+
+    canvas {
+        width: 150px;
         height: 150px;
     }
 }
@@ -292,11 +293,6 @@ and I will copy some rules from previous start button rules and make some change
     letter-spacing: 2px;
 }
 
-/* Targets the span inside h4 and both inside div with class (.main-container) */
-.main-container h4 span {
-    color: #ff206e;
-}
-
 /* Targets the h5 inside div with class (.main-container) */
 .main-container h5 {
     position: absolute;
@@ -310,7 +306,9 @@ and I will copy some rules from previous start button rules and make some change
 /* Targets the a link element inside h5 and both are inside div with class (.main-container) */
 .main-container h5 a {
     color: #41ead4;
-    padding-right: 8px;
+    text-decoration: none;
+    border-bottom: 0.5px solid #41ead4;
+    padding-bottom: 1px;
 }
 
 /* Add Media query till width: 522px */
