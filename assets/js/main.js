@@ -134,7 +134,15 @@ myAllTasks.addEventListener("click", function (myDel) {
 filter method that's running function with parameter(the Obj) and return obj.(id) is not equal to main fun parameter. */
 function removeTaskFromLS(theTask) {
     theAllTasksArray = theAllTasksArray.filter(function (newTaskData) {
-        return newTaskData.id != theTask;
+        return newTaskData.id != theTask;        /* It's necessary to use the inequality operator "!=" 
+                                                    instead of the strict inequality operator "!==". 
+                                                    I was able to identify this through the use of (typeof) 
+                                                    and by printing the results to the console. 
+                                                    typeof newTaskData.id ====> number
+                                                    typeof theTask ====> string
+                                                    If we use "!==" When a task is removed from the page,
+                                                    it will still remain in local storage, and
+                                                    If the page is reloaded, the task will reappear again on page */
     });
     addTasksToLS(theAllTasksArray);     // Call addTasksToLS function and set/pass the argument (the new value of theAllTasksArray).
 }
