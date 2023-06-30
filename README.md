@@ -8,7 +8,7 @@ The to-do List App is live, please [Click Here](https://alakeldev.github.io/to-d
 
 You can check the App on "Am I Responsive!" Website By [Clicking Here](https://ui.dev/amiresponsive?url=https://alakeldev.github.io/to-do-list-pp2/).
 
-Also you can check it on "Responsive Design Checker" Website too By [Clicking Here](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Falakeldev.github.io%2Fto-do-list-pp2%2F&width=1400&height=700).
+Also you can check it on "Responsive Design Checker" Website By [Clicking Here](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Falakeldev.github.io%2Fto-do-list-pp2%2F&width=1400&height=700).
 
 ## Tabel of Contents
 - [Tabel of Contents](#tabel-of-contents)
@@ -31,6 +31,7 @@ Also you can check it on "Responsive Design Checker" Website too By [Clicking He
     - [404 page](#404-page)
   - [Future Features](#future-features)
 - [Testing](#testing)
+  - [Manual Testing](#manual-testing)
   - [Validator Testing](#validator-testing)
   - [Unfixed Bugs](#unfixed-bugs)
 - [Technologies Used](#technologies-used)
@@ -40,7 +41,8 @@ Also you can check it on "Responsive Design Checker" Website too By [Clicking He
   - [How to deploy](#how-to-deploy)
   - [How to clone](#how-to-clone)
 - [Credits](#credits)
-  - [Content](#content)
+  - [Media](#media)
+  - [Code](#code)
   - [Acknowledgements](#acknowledgements)
 
 ## UX
@@ -55,7 +57,7 @@ To help you organize tasks and stay on top of your deadlines. It replaces pen-an
 Anyone who wants to keep track of their tasks and stay organized. It can be used by students, professionals, and anyone who wants to be more productive and efficient with their time.
 
 ### Communication
-Through the application, with a clear and simple design, you can add tasks and monitor your progress anytime. Even if you close the app, browser or even your device, you can get back to your added tasks and monitor your progress because of the local storage feature. The website structure is also good and clear.
+Our application has a clear and simple design that allows you to add tasks and monitor your progress anytime. Even if you close the app, browser or even your device, you can get back to your added tasks and monitor your progress because of the local storage feature. The App structure is also well-organized and easy to navigate.
 
 ### Current User Goals
 - To help the user stay organized and productive.
@@ -80,7 +82,7 @@ The color palette was created by [Coolors](https://coolors.co) with the idea of 
 "Lora" was selected for the all application pages as this font has simple, readable and clear decoration. also I make some words looking great by manipulating the space between letters.  ("sans-serif as alt font").
 
 ### Imagery
-The showing image on the start interface application was sourced from ["pinterest-website"](https://www.pinterest.com/pin/151715081184288287/).
+The start interface image was carefully chosen to evoke a sense of comfort and organization. It features a pen and a to-do list for the week, accompanied by a cup of coffee. This image is intended to inspire users to organize their tasks and approach them with a sense of calm and focus.
 
 ## Features
 
@@ -108,7 +110,7 @@ When users press the exit button on the main page of our to-do list application,
 
 #### 404 page
 
-This page is designed to be simple and straightforward, displaying only the application title and error description. Additionally, it includes a small text with a link that guides users back to the start page of the application.
+This page is designed to be simple and straightforward, displaying only the application title and error type/info. Additionally, it includes a small text with a link that guides users back to the start page of the application.
 
 ![404 Page](assets/readme-images/404.png)
 
@@ -119,7 +121,34 @@ This page is designed to be simple and straightforward, displaying only the appl
 - An Email notifications by sending Emails to remind the user about the pending tasks.
 
 ## Testing
+### Manual Testing
+I sent the live link to multiple people for feedback on functionality and design. I also tested the app repeatedly by myself in search of errors and improvements.
 
+| Feature | Expected outcome - Process details | Does it work? |
+| :-------------: | :-------------: | :-----: |
+|Start page "loading successfully"| All page elements with their css style loaded as expected without issues. | Yes |
+| Start Button "Auto Focus"| After all elements of start page loaded, it will be auto focus on start button. Also the user can access the App by hit the Enter button on keyboard.   | Yes   |
+| Exit Button "Close App"  | IF the user Clicked on close button so the App window will be closed    | Yes  |
+| Start Button "Go to Main App Page" | When the user clicked start button (Hit Enter), so it will open the main App page in the same window  | Yes |
+| Main App Page "Loading Successfully" |  All page Elements with their css style loaded as expected without issues  |  Yes  |
+| Empty Field "Auto Focus" | After All elements of main app page loaded, it will be auto focus on the input field (New Task Field), so the user can Write direct the Task  |  Yes |
+| Alert Msg "Empty Field scenario"      |  When User clicked on add new task button without fill the empty field so it will appear an alert msg that show the exact reason of alert   |  Yes   |
+| Alert Msg "Enter Task with More than 70 Characters"| when the user Enter the task but the task Characters reached to more than 70 characters then the user hit the add new task button so it will appear an alert msg showing the exact reason and after that it will clear the task field also auto focus on it again |  Yes   |
+| Add new Task Button "Enter Key Button"|  When the user enter his task and his task is not empty field, equal or below 70 Characters can easy hit Enter button so it will add the new task smoothly to the list  |  Yes   |
+| Task Added Successful "Auto Focus" |  After Successful added task so it will be focus again on the empty field   |   Yes  | 
+| Showing the task inside the page |  After successful task added it will be showed on the page   |  Yes   | 
+| Delete Task Button "Showed" |   Each added task it will showed on the page so it will appear its delete button so the user can attract with each task and deleted when ever he wants (if the task added by fault/ or after the task is done).   |   Yes  | 
+| Task Added successful to "Local Storage"|  After Showed the task on the page it will be also added s to the local storage successfully |  Yes| 
+| Delete Task Button "Delete"  |  when the user hit the delete button so its task will be deleted from the page succesfully   | Yes  | 
+| Delete Task Button "LS Delete"  |  after succesful deleted the task from the page it will be direct deleted from Local Storage too   | Yes  | 
+| Clear All Button "Appear" |  if the tasks list reached to two tasks or more so the clear all button will be appear on the page  |  Yes  | 
+| clear All Button "Disappear" |   if the tasks list has only one task so the clear all button will be disapear from the page  |  Yes  | 
+| Clear All Button "All Tasks List Deleted from(Page,LS,Array)" & "Auto Focus" |  when the user wants to clear the full tasks list and start from zero so the clear all button is the best way to do that, and also after finished it will be auto focus on new task input field |  Yes   | 
+| Exit Button "Go to See you later page" | When the user want to exit the tasks list, he can easy hit the exit button so it takes to another page the show good interact to user with a smile face to come back again later |  Yes  | 
+| Local Storage Feature    |   when the user close the App, browser or even trun the computer off so the tasks list will be there and can see it and add new tasks on it or even delete the old tasks from it without any issue.   |  Yes   | 
+| See you later Page "loading successfully" |   All page elements with their css style loaded as expected without issues.  |  Yes   | 
+| 404 page "loading successfully"| All page elements with their css style loaded as expected without issues.             | Yes    | 
+| 404 Page "Start Page Link"    |   Inside the 404 page has a start page link so the user can go direct to start page app ease |  Yes |
 
 ### Validator Testing
 - HTML (By using [W3C validator](https://validator.w3.org/))
@@ -162,16 +191,22 @@ This page is designed to be simple and straightforward, displaying only the appl
      ![lighthouse See You Later page](assets/readme-images/seeyoulater-lighthouse.png)
 
 - Accessibilty (By using [WAVE](https://wave.webaim.org/))
-  - The image below shows that there are only two alerts displayed in all app pages:
+  - There are No errors or contrast errors were returned, there are only two alerts displayed in all App pages as per image below:
 
     ![Accessibilty WAVE all App Pages](assets/readme-images/wave.png)
 
 ### Unfixed Bugs
+- First Unfixed Bug: I am experiencing in all App pages an error on Chrome & MS-edge browsers console that I cannot resolve. I have tried adding special meta data on each header of HTML app pages and allowing all the cookies on Google Chrome but none of these solutions worked. The error does not occur at all when I use Firefox.
 
+    ![Error Permissions Policy Header](assets/readme-images/permissions-policy-header.png)
+
+- Second Unfixed Bug: I am experiencing an error related to Canvas 2D in all app pages on Chrome and MS-Edge browsers console. The error is showing inside the process of Lighthouse and disappears after that.
+
+    ![Error Canvas](assets/readme-images/canvas-issue.png)
 
 ## Technologies Used
 ### Main Languages Used
-- HTML5 & Canvas Element
+- HTML5
 - CSS3
 - JavaScript
 
@@ -183,27 +218,66 @@ This page is designed to be simple and straightforward, displaying only the appl
 - Balsamiq-wireframes - was used to imagine the basic structure of the app without any styling.
 - (Am I Responsive?) & (ResponsiveDesignChecker) - to ensure the project-App is looked good across all devices.
 - favicon.io - to change the png format to favicon format.
-- Google Chrome - "Developer Tools, Console, Local Storage" to Monitor my code and check the errors along the way.
+- Google Chrome / MS-Edge / Firefox - "Developer Tools, Console, Local Storage" to Monitor my code and check the errors along the way.
 
 ## Deployment
 ### How to deploy
-- The site was deployed to GitHub pages. The steps to deploy are as follows:
-- In the GitHub repository, navigate to the Settings tab
-- From the source section drop-down menu, select the main Branch
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+- In the GitHub repository, navigate to the Settings tab.
+- From the source section drop-down menu, select the main Branch.
 - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-- The live link can be found Here [to-do List](https://alakeldev.github.io/to-do-list-pp2/)
+- The live link can be found Here [to-do List App](https://alakeldev.github.io/to-do-list-pp2/) .
 
  ### How to clone
-- Go to the following repository on GitHub: https://github.com/alakeldev/to-do-list-pp2
-- At the top right of the screen, click the 'Code' button, and then click 'HTTPs'
-- Copy the link in this field
-- Open VS-code, creat new project folder, open the terminal
-- On the terminal type "git clone", then paste the copied url and press 'Enter'
-- The clone process should now begin
+- Go to the following repository on GitHub: https://github.com/alakeldev/to-do-list-pp2 .
+- At the top right of the screen, click the 'Code' button, and then click 'HTTPs'.
+- Copy the link in this field.
+- Open VS-code, creat new project folder, open the terminal.
+- On the terminal type "git clone", then paste the copied url and press 'Enter'.
+- The clone process should now begin.
 
 ## Credits
 
-### Content
+### Media
+The image for the start interface application was sourced from ["pinterest-website"](https://www.pinterest.com/pin/151715081184288287/) .
+
+### Code
+
+- HTML & CSS: In addition to my knowledge, previous experience, I have used the following websites as references:
+  - [W3schools HTML - CSS](https://www.w3schools.com/html/) .
+  - [HTML - cheatsheet](https://htmlcheatsheet.com/) .
+  - [CSS - cheatsheet](https://htmlcheatsheet.com/css/) .
+
+- Javascript: After completing the CI Material and [‘Love Maths’](https://alakeldev.github.io/love-maths-game/) walk-through project, I consulted the following websites as references:
+  - [MDN Web Docs - JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) .
+  - [W3schools - JS](https://www.w3schools.com/js/js_intro.asp) .
+  - [DevDocs: API Documentation Browser - JS reference](https://devdocs.io/javascript/) .
+  - [JS - cheatsheet](https://htmlcheatsheet.com/js/) .
+
+- Canvas: I have gained a comprehensive understanding of the Canvas element and its drawing capabilities through JavaScript, including the ability to create charts and add small text within them. The following websites were instrumental in my journey:
+  - [MDN Web Docs - Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) .
+  - [Kirupa - Canvas](https://www.kirupa.com/canvas/index.htm) .
+  - [Chartjs - Canvas](https://www.chartjs.org/docs/latest/charts/bar.html) .
+
+- Local Storage & JSON: I have used the following websites as my primary sources to gain an understanding of (local storage & JavaScript Object Notation'JSON')  and how to use it in my project:
+
+  - [MDN Web Docs - LS](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) .
+  - [logRocket - LS](https://blog.logrocket.com/localstorage-javascript-complete-guide/) .
+  - [W3schools - LS](https://www.w3schools.com/jsref/prop_win_localstorage.asp) .
+  - [The Modern JavaScript Tutorial - LS](https://javascript.info/localstorage) .
+  - [MDN Web Docs - JSON(stringify(), parse())](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) .
+  - [Digital Ocean - JSON(stringify(), parse())](https://www.digitalocean.com/community/tutorials/js-json-parse-stringify) .
+  - [W3schools - JSON(stringify(), parse())](https://www.w3schools.com/js/js_json_stringify.asp) .
+
+- Youtube Videos: I watched the video/tutorial below for a simple to-do list app at the beginning of my project to gain an idea only:
+  - [Youtube - to-do list tutorial](https://www.youtube.com/watch?v=-pRg_daFjfk&t=117s) .
+
+- My Summarizes:  Throughout my JS study journey, I created a summary for JavaScript (Vanilla and DOM) and another one for Canvas "2D". This makes it easy for me to quickly review any information I need. If I cannot find what I am looking for in my summary, I will search for it on Google.
+Currently, my summaries are a little bit messy, but I plan to sort it out once I finish studying BOM and OOP in JavaScript. I will then add it to my JS summary. You can take a look on my Summarizes through the links below:
+  - [JavaScript](https://github.com/alakeldev/vanilla-dom-bom-oop-javascript-summarize-with-examples/blob/main/assets/js/script.js) .
+  - [Canvas 2D](https://github.com/alakeldev/canvas-2d-summarize-with-examples/blob/main/assets/js/script.js) .
+
+- Stack overflow: I used [Stack overflow](https://stackoverflow.com/) to try and fix the unfixed bugs, but the errors are still appearing as I mentioned in the unfixed bugs section.
 
 ### Acknowledgements
 
