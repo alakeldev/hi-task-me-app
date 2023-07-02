@@ -275,7 +275,7 @@ The image for the start interface application was sourced from ["pinterest-websi
 - Youtube Videos: I watched the video/tutorial below for a simple to-do list app at the beginning of my project to gain an idea only:
   - [Youtube - to-do list tutorial](https://www.youtube.com/watch?v=-pRg_daFjfk&t=117s) .
 
-- My Summarizes: during my journey of studying JavaScript, I have created two summaries: one for Vanilla and DOM JavaScript and another one for Canvas 2D. These summaries allow me to quickly review any information that I need. If I cannot find what I am looking for in my summaries, I will conduct a search on Google. Although my summaries are currently unorganized, I plan to sort them out once I finish studying BOM and OOP in JavaScript. Afterward, I will add them to my JavaScript summary. You can access my summaries through the links below:
+- My Summaries: during my journey of studying JavaScript, I have created two summaries: one for Vanilla and DOM JavaScript and another one for Canvas 2D. These summaries allow me to quickly review any information that I need. If I cannot find what I am looking for in my summaries, I will conduct a search on Google. Although my summaries are currently unorganized, I plan to sort them out once I finish studying BOM and OOP in JavaScript. Afterward, I will add them to my JavaScript summary. You can access my summaries through the links below:
 
   - [JavaScript](https://github.com/alakeldev/vanilla-dom-bom-oop-javascript-summarize-with-examples/blob/main/assets/js/script.js) .
   - [Canvas 2D](https://github.com/alakeldev/canvas-2d-summarize-with-examples/blob/main/assets/js/script.js) .
