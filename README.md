@@ -282,6 +282,7 @@ The image for the start interface application was sourced from ["pinterest-websi
 
 - Stack overflow: I have utilized [Stack overflow](https://stackoverflow.com/) to troubleshoot and resolve the bugs that I have encountered. However, despite my efforts, the errors persist as I have mentioned in the unfixed bugs section.
 
+- Slack CI channels: I have read on Slack channels about the experiences of both current and former students. I believe that reviewing their comments and answers will increase my knowledge and keep me updated with the challenges that other people face in their projects, especially in PP1 or PP2, which is at the same level of my current status. This will help me gain a better understanding of the course material and improve my performance.
 
 ### Acknowledgements
 
