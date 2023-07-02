@@ -1,6 +1,6 @@
 <h1 align="center">📝 To Do List App 📝</h1>
 
-This is a simple to-do list application that helps you keep track of your tasks and monitor your daily progress on any project or task. It can also help you remember any pending tasks. With this application, you can easily create and manage your to-do lists set prioritize your work. Whether you’re working on a personal project or even you daily tasks, this application can help you stay organized and focused.
+This is a simple to-do list application that helps you keep track of your tasks and monitor your daily progress on any project or task. It can also help you remember any pending tasks. With this application, you can easily create and manage your to-do lists and prioritize your work. Whether you’re working on a personal project or even your daily tasks, this application can help you stay organized and focused.
 
 The to-do List App is live, please [Click Here](https://alakeldev.github.io/to-do-list-pp2/) to check It.
 
@@ -48,16 +48,16 @@ Also you can check it on "Responsive Design Checker" Website By [Clicking Here](
 ## UX
 
 ### Site/App Purpose
-To provide yourself with a list of your priorities in order to ensure that you don’t forget anything and are able to effectively plan out your tasks so that they are all accomplished in the correct time frame.
+Our application provides you with a comprehensive list of priorities and tasks to ensure that you don’t forget anything and can effectively plan out your tasks to accomplish them within the correct time frame.
 
 ### Site/App Goal
-To help you organize tasks and stay on top of your deadlines. It replaces pen-and-paper to-do lists and can be used from mobile/Tablet devices and many desktop devices. It helps you stay productive by organizing everything you need to do in one place.
+Our application is designed to help you stay organized and on top of your deadlines. It replaces traditional pen-and-paper to-do lists and can be used on mobile, tablet, and desktop devices. Our application is designed to help you stay productive by organizing everything you need to do in one place.
 
 ### Audience
-Anyone who wants to keep track of their tasks and stay organized. It can be used by students, professionals, and anyone who wants to be more productive and efficient with their time.
+Our application is designed for anyone who wants to stay organized and on top of their tasks. It can be used by students, professionals, and anyone who wants to be more productive and efficient with their time.
 
 ### Communication
-Our application has a clear and simple design that allows you to add tasks and monitor your progress anytime. Even if you close the app, browser or even your device, you can get back to your added tasks and monitor your progress because of the local storage feature. The App structure is also well-organized and easy to navigate.
+Our application features a clear and simple design that allows you to add tasks and monitor your progress anytime. Even if you close the app, browser, or your device, you can easily get back to your added tasks and monitor your progress thanks to the local storage feature. The application structure is well-organized and easy to navigate, making it simple for you to manage your tasks and stay focused on your goals.
 
 ### Current User Goals
 - To help the user stay organized and productive.
@@ -74,29 +74,30 @@ Our application has a clear and simple design that allows you to add tasks and m
 ## Design
 
 ### Colour Scheme
-The color palette was created by [Coolors](https://coolors.co) with the idea of providing as much contrast as possible without feeling overwhelming. Most of the colors are primarily dark, simple, and calm across the site. However, the backgrounds (body element color) were generated in one main color (dark color “Jet”). Also, the texts have two main colors (black and white), but the title of the clear all button has a red color. Additionally, I’m using coloring shadows “inset” with Rose and Turquoise colors inside the buttons and coloring shadows “inset” with black color and anti-flash white as a background for the start app interface. The combination of the background color and shadow color does not overwhelm the user but gives a dark, simple, and stylish feeling. Also the main point of these colors that It does not hurt the eyes by working in a dark/night room.
+The color palette was created by [Coolors](https://coolors.co) with the idea of providing as much contrast as possible without feeling overwhelming. Most of the colors are primarily dark, simple, and calm across the site. The backgrounds (body element color) were generated in one main color (dark color “Jet”), while the texts have two main colors (black and white). The title of the clear all button has a red color. Additionally, coloring shadows “inset” with Rose and Turquoise colors were used inside the buttons, while coloring shadows “inset” with black color and anti-flash white were used as a background for the start app interface. The combination of the background color and shadow color does not overwhelm the user but gives a dark, simple, and stylish feeling. The main point of these colors is that they do not hurt the eyes when working in a dark/night room.
 
 ![Colour Palette](assets/readme-images/app-colors.png)
 
 ### Typography
-"Lora" was selected for the all application pages as this font has simple, readable and clear decoration. also I make some words looking great by manipulating the space between letters.  ("sans-serif as alt font").
+The font “Lora” was selected for all application pages due to its simple, readable, and clear decoration. Additionally, some words were made to look great by manipulating the space between letters. The font “sans-serif” was used as an alternative font.
 
 ### Imagery
-The start interface image was carefully chosen to evoke a sense of comfort and organization. It features a pen and a to-do list for the week, accompanied by a cup of coffee. This image is intended to inspire users to organize their tasks and approach them with a sense of calm and focus.
+The image on the start interface was carefully selected to evoke a sense of comfort and organization. It features with a pen and to-do list for the week, accompanied by a cup of coffee. The image is intended to inspire users to organize their tasks and approach them with a sense of calm and focus.
 
 ## Features
 
 ### Existing Features
 #### Start page
 
-We are providing the user with a simple design for a start page application. The start interface is simple with a dark background color that defines the soul of the app to make the user’s eyes more comfortable. Inside this page, users have a simple design with a header, image and simple text. They can choose between two options. The first one is to start the application by clicking on the start button that has the same background color as the body page but with an inset shadow (inner) that has turquoise color. The combination of these two colors gives good UX (also as a shortcut hand, users can push the Enter key on their keyboard directly to start the application). The other option is by clicking on the close button that also has the same background color of the body page but with an inner shadow that has rose color. This action will lead to closing the application if they change their mind.
+We are providing the user with a simple design for a start page application. The start interface has a dark background color that defines the soul of the app and makes the user’s eyes more comfortable. Inside this page, users have a simple design with a header, image and simple text. They can choose between two options. The first one is to start the application by clicking on the start button that has the same background color as the body page but with an inset shadow (inner) that has turquoise color. The combination of these two colors provides good UX. As a shortcut hand, users can push the Enter key on their keyboard directly to start the application. The other option is by clicking on the close button that also has the same background color of the body page but with an inner shadow that has rose color. This action will lead to closing/exit the application if they change their mind
 
 ![Start Page](assets/readme-images/startpage.png)
 
 
 #### Main App page
 
-On the main page of our to-do list application, users can add new tasks using the simple and intuitive new task adding process. The first section includes an exit button for users who want to leave the app, as well as simple text to guide users on what they should do. An empty field is provided for users to enter their tasks, and below the empty field is the ‘Add New Task’ button. Users can enter their task and press the button to add it to the list.
+On the main page of our to-do list application, users can add new tasks using the simple and intuitive new task adding process. The first section includes an exit button for users who want to leave the app, as well as simple text to guide users on what they should do. An empty field is provided for users to enter their tasks, and below the empty field is the ‘Add New Task’ button. Users can enter their task and press the button to add it to the list or push the Enter button on their keyboard.
+
 The other section on the main page of our to-do list application is the list of tasks. Users can see all the tasks they have added and review them as needed. Each task can be deleted from the list after it has been completed. Additionally, users can clear the entire list and start a new to-do list with no previous tasks displayed.
 
 ![Main App Page](assets/readme-images/mainpage.png)
@@ -104,13 +105,13 @@ The other section on the main page of our to-do list application is the list of 
 
 #### See You Later page
 
-When users press the exit button on the main page of our to-do list application, they are taken to a ‘See You Later’ page. This page has a simple design with a turquoise smiley face and simple text that enhances the user experience and encourages users to come back later and use the app with ease.
+When users press the exit button on the main page of our to-do list application, they are redirected to a ‘See You Later’ page. This page has a simple and elegant design that features a turquoise smiley face and concise text that enhances the user experience and encourages users to return later and use the app with ease.
 
 ![See You Later Page](assets/readme-images/seeyoulater.png)
 
 #### 404 page
 
-This page is designed to be simple and straightforward, displaying only the application title and error type/info. Additionally, it includes a small text with a link that guides users back to the start page of the application.
+This page is designed to be simple and straightforward, displaying only the application title and error type/info. Additionally, it includes a small text with a link that guides users back to the start page of the application. The goal is to provide users with clear and concise information about the error and help them return to the application with ease.
 
 ![404 Page](assets/readme-images/404.png)
 
@@ -198,11 +199,11 @@ I have shared the live link with multiple people in order to receive feedback on
     ![Accessibilty WAVE all App Pages](assets/readme-images/wave.png)
 
 ### Unfixed Bugs
-- First Unfixed Bug: I am experiencing in all App pages an error on Chrome & MS-edge browsers console that I cannot resolve. I have tried adding special meta data on each header of HTML app pages and allowing all the cookies on Google Chrome but none of these solutions worked. The error does not occur at all when I use Firefox.
+- First Unfixed Bug: I am experiencing an error on Chrome and MS-Edge browsers console that I cannot resolve. The error occurs on all app pages and does not occur when I use Firefox. I have tried adding special meta data on each header of HTML app pages and allowing all the cookies on Google Chrome, but none of these solutions worked.
 
     ![Error Permissions Policy Header](assets/readme-images/permissions-policy-header.png)
 
-- Second Unfixed Bug: I am experiencing an error related to Canvas 2D in all app pages on Chrome and MS-Edge browsers console. The error is showing inside the process of Lighthouse and disappears after that.
+- Second Unfixed Bug: I am experiencing an error related to Canvas 2D in all app pages on Chrome and MS-Edge browsers console. The error shows inside the process of Lighthouse and disappears after that.
 
     ![Error Canvas](assets/readme-images/canvas-issue.png)
 
@@ -245,7 +246,7 @@ The image for the start interface application was sourced from ["pinterest-websi
 
 ### Code
 
-- HTML & CSS: In addition to my knowledge, previous experience, I have used the following websites as references:
+- HTML & CSS: In addition to my knowledge and previous experience, I have used the following websites as references:
   - [W3schools HTML - CSS](https://www.w3schools.com/html/) .
   - [HTML - cheatsheet](https://htmlcheatsheet.com/) .
   - [CSS - cheatsheet](https://htmlcheatsheet.com/css/) .
@@ -256,12 +257,12 @@ The image for the start interface application was sourced from ["pinterest-websi
   - [DevDocs: API Documentation Browser - JS reference](https://devdocs.io/javascript/) .
   - [JS - cheatsheet](https://htmlcheatsheet.com/js/) .
 
-- Canvas: I have gained a comprehensive understanding of the Canvas element and its drawing capabilities through JavaScript, including the ability to create charts and add small text within them. The following websites were instrumental in my journey:
+- Canvas: I have gained a comprehensive understanding of the Canvas element and its drawing capabilities through JavaScript, including the ability to create charts and add small text within them. The following websites were instrumental/main-source in my learning journey:
   - [MDN Web Docs - Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) .
   - [Kirupa - Canvas](https://www.kirupa.com/canvas/index.htm) .
   - [Chartjs - Canvas](https://www.chartjs.org/docs/latest/charts/bar.html) .
 
-- Local Storage & JSON: I have used the following websites as my primary sources to gain an understanding of (local storage & JavaScript Object Notation'JSON')  and how to use it in my project:
+- Local Storage & JSON: I have consulted the following websites as my primary sources to acquire knowledge on local storage and JavaScript Object Notation (JSON), and to learn how to implement them in my project:
 
   - [MDN Web Docs - LS](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) .
   - [logRocket - LS](https://blog.logrocket.com/localstorage-javascript-complete-guide/) .
@@ -274,15 +275,16 @@ The image for the start interface application was sourced from ["pinterest-websi
 - Youtube Videos: I watched the video/tutorial below for a simple to-do list app at the beginning of my project to gain an idea only:
   - [Youtube - to-do list tutorial](https://www.youtube.com/watch?v=-pRg_daFjfk&t=117s) .
 
-- My Summarizes:  Throughout my JS study journey, I created a summary for JavaScript (Vanilla and DOM) and another one for Canvas "2D". This makes it easy for me to quickly review any information I need. If I cannot find what I am looking for in my summary, I will search for it on Google.
-Currently, my summaries are a little bit messy, but I plan to sort it out once I finish studying BOM and OOP in JavaScript. I will then add it to my JS summary. You can take a look on my Summarizes through the links below:
+- My Summarizes: during my journey of studying JavaScript, I have created two summaries: one for Vanilla and DOM JavaScript and another one for Canvas 2D. These summaries allow me to quickly review any information that I need. If I cannot find what I am looking for in my summaries, I will conduct a search on Google. Although my summaries are currently unorganized, I plan to sort them out once I finish studying BOM and OOP in JavaScript. Afterward, I will add them to my JavaScript summary. You can access my summaries through the links below:
+
   - [JavaScript](https://github.com/alakeldev/vanilla-dom-bom-oop-javascript-summarize-with-examples/blob/main/assets/js/script.js) .
   - [Canvas 2D](https://github.com/alakeldev/canvas-2d-summarize-with-examples/blob/main/assets/js/script.js) .
 
-- Stack overflow: I used [Stack overflow](https://stackoverflow.com/) to try and fix the unfixed bugs, but the errors are still appearing as I mentioned in the unfixed bugs section.
+- Stack overflow: I have utilized [Stack overflow](https://stackoverflow.com/) to troubleshoot and resolve the bugs that I have encountered. However, despite my efforts, the errors persist as I have mentioned in the unfixed bugs section.
+
 
 ### Acknowledgements
 
-- I want to say thank you to my mentor Martina, who consistently gave me good advices, feedback and helped me to keep the project within the prospective guidelines.
+- I am grateful to my mentor Martina for her valuable advice and feedback throughout the project.
 
-- I would like to thank the assessor for their comments related to my previous project (PP1). They helped me avoid making the same mistakes again, except for one: my Github commit messages are still too long. I apologize for this because when I received these valuable comments, I was almost finished with (PP2). However, I will try my best throughout (PP3) to make my commit messages within 50 characters.
+- I would like to express my gratitude to the assessor for providing me with constructive feedback and comments on my previous project (PP1). Their comments have helped me to avoid repeating the same mistakes in my subsequent projects. However, I regret that I have not been able to address one of their concerns regarding the length of my Github commit messages. I apologize for this oversight as I had almost completed (PP2) when I received their valuable feedback. Nevertheless, I will make every effort throughout (PP3) to ensure that my commit messages are within 50 characters.
