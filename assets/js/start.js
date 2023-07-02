@@ -15,5 +15,8 @@ startBtn.addEventListener("click", function () {
 // Add event listener ("click") so after clicked on close button it's running a function that close the window app.
 closeBtn.addEventListener("click", function () {
     window.open("seeyoulater.html", "_self");
-    window.close();
+    window.close();             /* Important Note: The behavior of the close() method varies from browser to browser. 
+                                For instance, in MS-Edge and Firefox, the close() method will close the window of the app.
+                                However, in Chrome locally on my device the behavior is similar to MS-edge, but on Live link 
+                                it will open the page through window.open() and window.close() it will not close the window */
 });
