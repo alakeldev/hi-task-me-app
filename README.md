@@ -130,17 +130,17 @@ I have shared the live link with multiple people in order to receive feedback on
 | :-------------: | :-------------: | :-----: |
 | Start page "Loading Successfully" | All page elements have been successfully loaded with their corresponding CSS styles without any issues | Yes |
 | Start Button "Auto Focus"| Once all elements of the start page have loaded, the start button will be automatically focused. Additionally, users can access the app by pressing the Enter key on their keyboard | Yes |
-| Close Button "Close App" | If the user decides to close the app after opening the start page application, they can easily do so by clicking on the close button | Yes |
+| Close Button "Close App" | If the user decides to close/exit the app after opening the start page application, they can easily do so by clicking on the close button | Yes |
 | Start Button "Open Main Page App" | When the user clicks on the start button (or hits Enter button), they will be directed to the main app page which will open in the same window | Yes |
 | Main App Page "Loading Successfully" | All page elements have been successfully loaded with their corresponding CSS styles without any issues |  Yes  |
 | New Task Input Field "Auto Focus" | Once all elements of the main app page have full loaded, the input field (New Task Field) will be automatically focused on so that the user can write their task directly | Yes |
 | Add New Task Button "Scenario: Task Added Successfully" | If the user enters a task that is not an empty field and is equal to or below 70 characters, the task will be accepted and added successfully. | Yes |
 | Alert Msg "Scenario: Empty Field" | If the user clicks on the ‘Add New Task’ button without filling in the empty field, an alert message will appear that shows the exact reason for the alert | Yes |
 | Alert Msg "Scenario: If the task is more than 70 Characters" | If the user enters a task with more than 70 characters and then clicks on the ‘Add New Task’ button, an alert message will appear that shows the exact reason for the alert. After that, the task field will be cleared and auto-focused again | Yes |
-| Add New Task Button "Enter Button" | The user can check for three possible scenarios in the new task field by pressing the ‘Enter’ key on their keyboard | Yes |
+| Add New Task Button "Enter Button" | The user can check for three possible scenarios in the new task field by pressing the ‘Enter’ key on their keyboard. Its behaviour is similar to click by mouse cursor on add new task button | Yes |
 | After the Successful Task Added "Auto Focus" | “After successfully adding a task, the field will be cleared and focused again, allowing the user to enter another task directly | Yes |
 | Display the Task on the Page | Once the task has been successfully added, it will be displayed on the page | Yes | 
-| Delete Task Button "Appear" | Each task that is added will be displayed on the page along with its corresponding delete button, allowing users to remove any tasks that were added in error or after completion | Yes | 
+| Delete Task Button "Appear" | Each task that is added will be displayed on the page along with its corresponding delete button, allowing users to remove any tasks that were added in error or after the task completion | Yes | 
 | Task Added successfully to "Local Storage"| Once the task is displayed on the page, it will also be added to local storage successfully |  Yes| 
 | Delete Task Button "Delete Action" | When the user clicks on the delete button, the corresponding task will be removed from the page successfully | Yes | 
 | Delete Task Button "LS Delete Action" | Once the task is successfully deleted from the page, it will also be removed from Local Storage |Yes| 
@@ -148,10 +148,10 @@ I have shared the live link with multiple people in order to receive feedback on
 | Clear All Button "Disappear" | Once the number of tasks on the list is reduced to one, the ‘Clear All’ button will disappear from the page | Yes | 
 | Clear All Button "Clear Action" | When a user wants to clear their entire tasks list and start from scratch, the ‘Clear All’ button is the most efficient way to do so. This button will remove all tasks from the page, local storage, and the tasks array itself. Once completed, the user will be automatically directed to the new task input field | Yes |
 | Exit Button "Open See You Later Page" | When a user wants to exit their task list, they can easily do so by clicking on the ‘Exit’ button. This will direct them to a ‘See You Later’ page which features a smiley face design. This design is intended to create a positive interaction with the user and encourage them to return at a later time | Yes | 
-| Local Storage Feature "Main Purpose" | When a user closes their app or browser or turns off their computer, their task list will still be available when they open it again. They can easily add new tasks or delete old ones without any issues. This is made possible through local storage techniques. When a user opens up their main app page, a function is run which checks for any previous tasks stored in local storage. These tasks are then displayed on the page for the user. This ensures that users are not afraid of losing their task list no matter what scenario they may encounter | Yes | 
+| Local Storage Feature "Main Purpose" | When a user closes their app or browser or even turns off their device- Computer..., their task list will still be available when they open it again. They can easily add new tasks or delete old ones without any issues. This is made possible through local storage techniques. When a user opens up their main app page, a function is run which checks for any previous tasks stored in local storage. These tasks are then displayed on the page for the user. This ensures that users are not afraid of losing their task list no matter what scenario they may encounter | Yes | 
 | See you later Page "Loading Successfully" | All page elements have been successfully loaded with their corresponding CSS styles without any issues | Yes | 
 | 404 page "Loading Successfully" | All page elements have been successfully loaded with their corresponding CSS styles without any issues | Yes | 
-| 404 Page "Link Start App Page" | The 404 page contains a link to the start page which allows users to easily navigate back to the main app page | Yes |
+| 404 Page "Link Start App Page" | The 404 page contains a link to the start page which allows users to easily navigate back to the start app page | Yes |
 
 ### Validator Testing
 - HTML (By using [W3C validator](https://validator.w3.org/))
