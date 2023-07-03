@@ -116,10 +116,10 @@ This page is designed to be simple and straightforward, displaying only the appl
 ![404 Page](assets/readme-images/404.png)
 
 ### Future Features
-- A smart suggestions using machine learning algorithms to suggest tasks based on the user’s previous tasks and habits.
-- A voice commands by adding voice commands to your app so that users can add tasks and complete them without having to type.
-- An analytics features that allow users to track their productivity and see how much time they spend on different tasks.
-- An Email notifications by sending Emails to remind the user about the pending tasks.
+- Smart suggestions using machine learning algorithms to suggest tasks based on the user’s previous tasks and habits.
+- Voice commands by adding voice commands to your app so that users can add tasks and complete them without having to type.
+- Analytical features that allow users to track their productivity and see how much time they spend on different tasks.
+- Email notifications by sending Emails to remind the user about the pending tasks.
 
 ## Testing
 ### Manual Testing
