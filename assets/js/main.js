@@ -28,7 +28,7 @@ getTasksFromLS();
 /* Add event listener ("click") so after clicked on Add New Task Button it's running a function,
 (to check on input field with if and else if conditions and showing alert message related to each status or to go further). */
 addTaskBtn.addEventListener("click", function () {
-    if (taskInput.value === "") {
+    if (taskInput.value.trim() === "") {
         alert("Sorry! Please Enter Your Task in The Empty Field Before Click On Add Task Button =)");
         taskInput.focus();
     } else if (taskInput.value.length > 70) {

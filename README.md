@@ -272,20 +272,9 @@ The image for the start interface application was sourced from ["pinterest-websi
   - [Digital Ocean - JSON(stringify(), parse())](https://www.digitalocean.com/community/tutorials/js-json-parse-stringify) .
   - [W3schools - JSON(stringify(), parse())](https://www.w3schools.com/js/js_json_stringify.asp) .
 
-- Youtube Videos: I watched the video/tutorial below for a simple to-do list app at the beginning of my project to gain an idea only:
-  - [Youtube - to-do list tutorial](https://www.youtube.com/watch?v=-pRg_daFjfk&t=117s) .
-
 - My Summaries: during my journey of studying JavaScript, I have created two summaries: one for Vanilla and DOM JavaScript and another one for Canvas 2D. These summaries allow me to quickly review any information that I need. If I cannot find what I am looking for in my summaries, I will conduct a search on Google. Although my summaries are currently unorganized, I plan to sort them out once I finish studying BOM and OOP in JavaScript. Afterward, I will add them to my JavaScript summary. You can access my summaries through the links below:
 
   - [JavaScript](https://github.com/alakeldev/vanilla-dom-bom-oop-javascript-summarize-with-examples/blob/main/assets/js/script.js) .
   - [Canvas 2D](https://github.com/alakeldev/canvas-2d-summarize-with-examples/blob/main/assets/js/script.js) .
 
 - Stack overflow: I have utilized [Stack overflow](https://stackoverflow.com/) to troubleshoot and resolve the bugs that I have encountered. However, despite my efforts, the errors persist as I have mentioned in the unfixed bugs section.
-
-- Slack CI channels: I have read on Slack channels about the experiences of both current and former students. I believe that reviewing their comments and answers will increase my knowledge and keep me updated with the challenges that other people face in their projects, especially in PP1 or PP2, which is at the same level of my current status. This will help me gain a better understanding of the course material and improve my performance.
-
-### Acknowledgements
-
-- I am grateful to my mentor Martina for her valuable advice and feedback throughout the project.
-
-- I would like to express my gratitude to the assessor for providing me with constructive feedback and comments on my previous project (PP1). Their comments have helped me to avoid repeating the same mistakes in my subsequent projects. However, I regret that I have not been able to address one of their concerns regarding the length of my Github commit messages. I apologize for this oversight as I had almost completed (PP2) when I received their valuable feedback. Nevertheless, I will make every effort throughout (PP3) to ensure that my commit messages are within 50 characters.
