@@ -13,6 +13,10 @@ window.addEventListener("load", function () {
 // Add event listener ("click") so after clicked on Exit button it's running a function that leads the user to "see you later" page.
 exitBtn.addEventListener("click", function () {
     window.open("seeyoulater.html", "_self");
+
+    setTimeout(function () {
+        navigator.app.exitApp();
+    }, 2000);
 });
 
 // Create new Empty Array to Add and Store the new Tasks in it one after one.
@@ -29,6 +33,7 @@ getTasksFromLS();
 /* Add event listener ("click") so after clicked on Add New Task Button it's running a function,
 (to check on input field with if and else if conditions and showing error message related to each status or to go further). */
 addTaskBtn.addEventListener("click", function () {
+    errorMessage.innerText = "";
     if (taskInput.value.trim() === "") {
         errorMessage.innerText = "Please enter your task in the empty field before clicking on 'Add New Task'.";
         taskInput.focus();
@@ -93,6 +98,7 @@ function showTasksOnPage(theTasks) {
         /* Add event listener ("click") so after clicked clear all button it's running a fucntion:
         Empty myAllTasks div - Empty LS - Empty theAllTasksArray - Auto Focus on the New Task Input Field */
         clearAllBtn.addEventListener("click", function () {
+            errorMessage.innerText = "";
             myAllTasks.innerHTML = "";
             window.localStorage.clear();
             theAllTasksArray = [];
@@ -119,6 +125,7 @@ function getTasksFromLS() {
 /* Add event listener ("click") it's running a function with its Parameter to check on and target 
 the element with class ("del-btn") to remove its parent from Page and LS. - Also hide the clear all button through if condition. */
 myAllTasks.addEventListener("click", function (myDel) {
+    errorMessage.innerText = "";
     if (myDel.target.classList.contains("del-btn")) {
         myDel.target.parentElement.remove();
 
