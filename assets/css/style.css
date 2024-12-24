@@ -188,6 +188,14 @@ and I will copy some rules from previous start button rules and make some change
     letter-spacing: 0.5px;
 }
 
+
+/* Targets the Paragraph error below the Add new Task Button*/
+.error-message {
+    text-align: center;
+    color: #b00340;
+    padding-top: 15px;
+}
+
 /* Targets the Exit button with class .exit-sulp and set below css rules */
 .exit-sulp {
     width: 50px;
@@ -240,6 +248,14 @@ and I will copy some rules from previous start button rules and make some change
 
     .my-all-tasks .del-btn {
         margin-top: 15px;
+    }
+}
+
+/* Add Media query for screens till width: 633px */
+@media screen and (max-width: 633px) {
+    .my-all-tasks .the-new-task {
+        word-break: break-word;
+        max-width: 450px;
     }
 }
 

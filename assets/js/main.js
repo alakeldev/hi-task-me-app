@@ -2,7 +2,8 @@
 let exitBtn = document.getElementById("exit-btn"),
     taskInput = document.getElementById("my-task"),
     addTaskBtn = document.querySelector(".add-btn"),
-    myAllTasks = document.querySelector(".my-all-tasks");
+    myAllTasks = document.querySelector(".my-all-tasks"),
+    errorMessage = document.querySelector(".error-message");
 
 // Add event listener ("load") so after page fully loaded it's running a function that make auto focus on the input(new task field).
 window.addEventListener("load", function () {
@@ -26,17 +27,18 @@ if (window.localStorage.getItem("my-tasks")) {
 getTasksFromLS();
 
 /* Add event listener ("click") so after clicked on Add New Task Button it's running a function,
-(to check on input field with if and else if conditions and showing alert message related to each status or to go further). */
+(to check on input field with if and else if conditions and showing error message related to each status or to go further). */
 addTaskBtn.addEventListener("click", function () {
     if (taskInput.value.trim() === "") {
-        alert("Sorry! Please Enter Your Task in The Empty Field Before Click On Add Task Button =)");
+        errorMessage.innerText = "Please enter your task in the empty field before clicking on 'Add New Task'.";
         taskInput.focus();
     } else if (taskInput.value.length > 70) {
-        alert("Sorry! But You Can Only Enter Up To 70 Characters =)");
+        errorMessage.innerText = "Sorry, but you can only enter up to 70 characters.";
         taskInput.value = "";
         taskInput.focus();
     } else if (taskInput.value !== "" && taskInput.value.length < 71) {
         myNewTasks(taskInput.value);
+        errorMessage.innerText = "";
         taskInput.value = "";
     }
 });
