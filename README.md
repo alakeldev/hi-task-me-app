@@ -242,7 +242,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 The image for the start interface application was sourced from ["pinterest-website"](https://www.pinterest.com/pin/151715081184288287/) .
 
 
-** I have created a comprehensive reference to JavaScript and the Canvas 2D, which has greatly enhanced my understanding and application of these technologies.
+- I have created a comprehensive reference to JavaScript and the Canvas 2D, which has greatly enhanced my understanding and application of these technologies.
 
   - [JavaScript](https://github.com/alakeldev/vanilla-dom-bom-oop-javascript-summarize-with-examples/blob/main/assets/js/script.js) .
   - [Canvas 2D](https://github.com/alakeldev/canvas-2d-summarize-with-examples/blob/main/assets/js/script.js) .
