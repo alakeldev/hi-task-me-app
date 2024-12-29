@@ -42,8 +42,6 @@ Also you can check it on "Responsive Design Checker" Website By [Clicking Here](
   - [How to clone](#how-to-clone)
 - [Credits](#credits)
   - [Media](#media)
-  - [Code](#code)
-  - [Acknowledgements](#acknowledgements)
 
 ## UX
 
@@ -240,41 +238,11 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 - The clone process should now begin.
 
 ## Credits
-
 ### Media
 The image for the start interface application was sourced from ["pinterest-website"](https://www.pinterest.com/pin/151715081184288287/) .
 
-### Code
 
-- HTML & CSS: In addition to my knowledge and previous experience, I have used the following websites as references:
-  - [W3schools HTML - CSS](https://www.w3schools.com/html/) .
-  - [HTML - cheatsheet](https://htmlcheatsheet.com/) .
-  - [CSS - cheatsheet](https://htmlcheatsheet.com/css/) .
-
-- Javascript: After completing the CI Material and [‘Love Maths’](https://alakeldev.github.io/love-maths-game/) walk-through project, I consulted the following websites as references:
-  - [MDN Web Docs - JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) .
-  - [W3schools - JS](https://www.w3schools.com/js/js_intro.asp) .
-  - [DevDocs: API Documentation Browser - JS reference](https://devdocs.io/javascript/) .
-  - [JS - cheatsheet](https://htmlcheatsheet.com/js/) .
-
-- Canvas: I have gained a comprehensive understanding of the Canvas element and its drawing capabilities through JavaScript, including the ability to create charts and add small text within them. The following websites were instrumental/main-source in my learning journey:
-  - [MDN Web Docs - Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) .
-  - [Kirupa - Canvas](https://www.kirupa.com/canvas/index.htm) .
-  - [Chartjs - Canvas](https://www.chartjs.org/docs/latest/charts/bar.html) .
-
-- Local Storage & JSON: I have consulted the following websites as my primary sources to acquire knowledge on local storage and JavaScript Object Notation (JSON), and to learn how to implement them in my project:
-
-  - [MDN Web Docs - LS](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) .
-  - [logRocket - LS](https://blog.logrocket.com/localstorage-javascript-complete-guide/) .
-  - [W3schools - LS](https://www.w3schools.com/jsref/prop_win_localstorage.asp) .
-  - [The Modern JavaScript Tutorial - LS](https://javascript.info/localstorage) .
-  - [MDN Web Docs - JSON(stringify(), parse())](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) .
-  - [Digital Ocean - JSON(stringify(), parse())](https://www.digitalocean.com/community/tutorials/js-json-parse-stringify) .
-  - [W3schools - JSON(stringify(), parse())](https://www.w3schools.com/js/js_json_stringify.asp) .
-
-- My Summaries: during my journey of studying JavaScript, I have created two summaries: one for Vanilla and DOM JavaScript and another one for Canvas 2D. These summaries allow me to quickly review any information that I need. If I cannot find what I am looking for in my summaries, I will conduct a search on Google. Although my summaries are currently unorganized, I plan to sort them out once I finish studying BOM and OOP in JavaScript. Afterward, I will add them to my JavaScript summary. You can access my summaries through the links below:
+** I have created a comprehensive reference to JavaScript and the Canvas 2D, which has greatly enhanced my understanding and application of these technologies.
 
   - [JavaScript](https://github.com/alakeldev/vanilla-dom-bom-oop-javascript-summarize-with-examples/blob/main/assets/js/script.js) .
   - [Canvas 2D](https://github.com/alakeldev/canvas-2d-summarize-with-examples/blob/main/assets/js/script.js) .
-
-- Stack overflow: I have utilized [Stack overflow](https://stackoverflow.com/) to troubleshoot and resolve the bugs that I have encountered. However, despite my efforts, the errors persist as I have mentioned in the unfixed bugs section.
