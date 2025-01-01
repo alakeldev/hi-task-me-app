@@ -1,8 +1,8 @@
-<h1 align="center">📝 To Do List App 📝</h1>
+<h1 align="center">📝 Hi Task Me App 📝</h1>
 
-This is a simple to-do list application that helps you keep track of your tasks and monitor your daily progress on any project or task. It can also help you remember any pending tasks. With this application, you can easily create and manage your to-do lists and prioritize your work. Whether you’re working on a personal project or even your daily tasks, this application can help you stay organized and focused.
+This is a simple Tasks list application that helps you keep track of your tasks and monitor your daily progress on any project or task. It can also help you remember any pending tasks. With this application, you can easily create and manage your tasks lists and prioritize your work. Whether you’re working on a personal project or even your daily tasks, this application can help you stay organized and focused.
 
-The to-do List App is live, please [Click Here](https://alakeldev.github.io/to-do-list-pp2/) to check It.
+The Hi Task Me App is live, please [Click Here](https://alakeldev.github.io/to-do-list-pp2/) to check It.
 
 ![Site view across devices](assets/readme-images/todolistapp-amiresponsive.png)
 
