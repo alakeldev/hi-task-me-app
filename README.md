@@ -112,6 +112,12 @@ This page is designed to be simple and straightforward, displaying only the appl
 
 ![404 Page](assets/readme-images/404.png)
 
+#### Privacy Policy page
+
+Learn how Hi Task Me App ensures your privacy and secures your data while helping you manage your daily tasks efficiently.
+
+![Privacy Policy Page](assets/readme-images/pp.png)
+
 ### Future Features
 - Smart suggestions using machine learning algorithms to suggest tasks based on the user’s previous tasks and habits.
 - Voice commands by adding voice commands to your app so that users can add tasks and complete them without having to type.
