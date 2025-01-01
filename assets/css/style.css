@@ -341,3 +341,23 @@ and I will copy some rules from previous start button rules and make some change
 }
 
 /* End 404.html page CSS rules / its Media Rules too */
+
+/*Start Style Privacy Policy Page*/
+
+.main-header-pp {
+    text-align: center;
+    color: wheat;
+    margin: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .header-five-pp h5 {
+        top: 50% !important;
+    }
+
+    .main-header-pp {
+        font-size: 18px;
+    }
+}
+
+/*End Style Privacy Policy Page*/
