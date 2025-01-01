@@ -2,13 +2,11 @@
 
 This is a simple Tasks list application that helps you keep track of your tasks and monitor your daily progress on any project or task. It can also help you remember any pending tasks. With this application, you can easily create and manage your tasks lists and prioritize your work. Whether you’re working on a personal project or even your daily tasks, this application can help you stay organized and focused.
 
-The Hi Task Me App is live, please [Click Here](https://alakeldev.github.io/to-do-list-pp2/) to check It.
+The Hi Task Me App is live, please [Click Here](https://alakeldev.github.io/hi-task-me-app/) to check It.
 
 ![Site view across devices](assets/readme-images/todolistapp-amiresponsive.png)
 
-You can check the App on "Am I Responsive!" Website By [Clicking Here](https://ui.dev/amiresponsive?url=https://alakeldev.github.io/to-do-list-pp2/).
-
-Also you can check it on "Responsive Design Checker" Website By [Clicking Here](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Falakeldev.github.io%2Fto-do-list-pp2%2F&width=1400&height=700).
+You can check the App on "Am I Responsive!" Website By [Clicking Here](https://ui.dev/amiresponsive?url=https://alakeldev.github.io/hi-task-me-app/).
 
 ## Tabel of Contents
 - [Tabel of Contents](#tabel-of-contents)
@@ -29,6 +27,7 @@ Also you can check it on "Responsive Design Checker" Website By [Clicking Here](
     - [Main App page](#main-app-page)
     - [See You Later page](#see-you-later-page)
     - [404 page](#404-page)
+    - [Privacy Policy page](#privacy-policy-page)
   - [Future Features](#future-features)
 - [Testing](#testing)
   - [Manual Testing](#manual-testing)
