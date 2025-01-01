@@ -278,3 +278,37 @@ The image for the start interface application was sourced from ["pinterest-websi
 ## Mobile App Deployment
 
 ### Converting Application With Cordova for ios
+
+#### What is Cordova
+
+<https://cordova.apache.org/>
+
+Apache Cordova is an open-source mobile development framework. It allows you to use standard web technologies - HTML5, CSS3, and JavaScript for cross-platform development. Applications execute within wrappers targeted to each platform, and rely on standards-compliant API bindings to access each device's capabilities such as sensors, data, network status, etc.
+
+#### Use Apache Cordova if you are
+
+- a mobile developer and want to extend an application across more than one platform, without having to re-implement it with each platform's language and tool set.
+
+- a web developer and want to deploy a web app that's packaged for distribution in various app store portals.
+
+- a mobile developer interested in mixing native application components with a WebView (special browser window) that can access device-level APIs, or if you want to develop a plugin interface between native and WebView components.
+
+#### Procedure for Converting the Hi Task Me Application to Function on iOS Mobile Devices
+
+- clone my repo <https://github.com/alakeldev/hi-task-me-app.git>.
+- npm install -g cordova
+- cordova create hello com.example.hello HelloWorld
+- cd hello (the new dir)
+- open www dir and delete all default files created inside it
+- move your all your Hi Task Me project files to inside the www dir
+- cordova platform add ios
+
+After finished from the part above you should move the hello dir into MacOS device to continue the process
+
+- make sure node js and cordova donwloaded on your MacOS device
+- open Terminal and cd to the hello dir
+- cordova build ios
+- open file .xcodeproj with xCode IDE
+- set the Application settings and then ready to upload to apple store
+
+To generate IOS icon to your application you can visit <https://www.appicon.co/>
