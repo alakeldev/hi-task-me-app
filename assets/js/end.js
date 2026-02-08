@@ -1,3 +1,5 @@
+// Canvas element to draw a smiley face inside seeyoulater.html page. --- IGNORE ---
+
 // Declare Variables related to Canvas element inside seeyoulater.html page / also set its  place to draw inside as (2d)
 let smileFace = document.getElementById("smile-face"),
     theContext = smileFace.getContext("2d");
@@ -47,4 +49,4 @@ theContext.lineWidth = 3;
 theContext.stroke();
 
 /* I set all the methods for (x,y) values in a dynamic way because of media rules inside the CSS file 
-that are going to reduce the width and height of the main canvas. */ 
+that are going to reduce the width and height of the main canvas. */
