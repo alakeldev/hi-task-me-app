@@ -194,6 +194,7 @@ and I will copy some rules from previous start button rules and make some change
     text-align: center;
     color: #b00340;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /* Targets the Exit button with class .exit-sulp and set below css rules */
@@ -361,3 +362,49 @@ and I will copy some rules from previous start button rules and make some change
 }
 
 /*End Style Privacy Policy Page*/
+
+/* Start Style Timer Page */
+
+.inside-container-timer {
+    width: 900px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: var(--border-radius-main-value);
+    box-shadow: 0 0 20px #000000 inset;
+}
+#time {
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin: 15px 0;
+    color: #000000;
+}
+
+/* Optional wrapper if you group buttons */
+.timer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Small enhancement on hover (keeps your soul) */
+.start:hover,
+.close:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+    transition: 0.2s ease;
+}
+
+/* Responsive adjustment ONLY for timer text */
+@media screen and (max-width: 530px) {
+    #time {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+}
+
+/* End Style Timer Page */

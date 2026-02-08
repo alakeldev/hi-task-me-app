@@ -108,3 +108,7 @@ function removeTaskFromLS(theTaskID) {
     });
     window.localStorage.setItem("my-tasks", JSON.stringify(theAllTasksArray));
 }
+
+function goToTimer() {
+    window.open("timer.html", "_self");
+}
