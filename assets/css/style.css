@@ -158,6 +158,81 @@ canvas {
     border-radius: var(--border-radius-main-value);
 }
 
+/* Clock/date styled to match site 'soul' */
+.datetime {
+    font-family: inherit;
+    text-align: center;
+}
+.datetime.circle {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-color: #cdcbcc; /* same as form area */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4) inset, 0 6px 18px rgba(0,0,0,0.4);
+    border: 3px solid var(--main-background-color);
+}
+
+/* larger circular variant for timer page */
+.datetime.circle.large {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 26px rgba(0,0,0,0.45) inset, 0 8px 24px rgba(0,0,0,0.5);
+}
+.datetime.circle.large .clock-time { font-size: 36px; }
+.datetime.circle.large .clock-date { font-size: 14px; color: #971700; }
+
+/* Square variant matching site 'soul' */
+.datetime.square {
+    width: 140px;
+    height: 100px;
+    border-radius: var(--border-radius-for-buttons);
+    background-color: #cdcbcc; /* same as form area */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px auto;
+    box-shadow: 0 0 18px rgba(0,0,0,0.35) inset, 0 6px 18px rgba(0,0,0,0.4);
+    border: 3px solid var(--main-background-color);
+}
+.datetime.square .clock-time {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--main-background-color);
+}
+.datetime.square .clock-date {
+    font-size: 12px;
+    color: #f00b0b; /* site accent */
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 480px) {
+    .datetime.square { width: 110px; height: 82px; }
+    .datetime.square .clock-time { font-size: 20px; }
+}
+.datetime.circle .clock-time {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--main-background-color);
+    letter-spacing: 1px;
+}
+.datetime.circle .clock-date {
+    font-size: 12px;
+    color: #ce0902; /* site accent */
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 480px) {
+    .datetime.circle { width: 100px; height: 100px; }
+    .datetime.circle .clock-time { font-size: 22px; }
+}
+
 /* Targets the input field with class .my-text-input 
 in this field i will write my new task. set below css rules */
 .my-text-input {
@@ -239,6 +314,46 @@ and I will copy some rules from previous start button rules and make some change
     overflow: auto;
 }
 
+/* Task layout: delete left, text center, done right */
+.the-new-task { align-items: center; }
+.the-new-task .del-btn,
+.the-new-task .done-btn,
+.my-all-tasks .del-btn {
+    width: 80px;
+    height: 40px;
+    border-radius: var(--border-radius-for-buttons);
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 8px;
+}
+.the-new-task .del-btn {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 20px #ff206e inset;
+}
+.the-new-task .done-btn {
+    background-color: var(--main-background-color);
+    color: #ffffff;
+    box-shadow: 0 0 20px #41ead4 inset;
+}
+
+/* Active styling when a task is done */
+.the-new-task .done-btn.done-active {
+    background-color: #b2b515; /* pink accent */
+    box-shadow: 0 0 20px #521e09 inset;
+    color: #0d0d0d;
+}
+.the-new-task .task-text {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0 12px;
+}
+.the-new-task .task-text.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
 /* Add Media query for screens till width: 992px */
 @media screen and (max-width: 992px) {
     .my-all-tasks .the-new-task {
@@ -247,9 +362,18 @@ and I will copy some rules from previous start button rules and make some change
         align-items: center;
     }
 
+    /* add vertical gap when buttons stack and give spacing */
+    .my-all-tasks .the-new-task { gap: 12px; }
+
     .my-all-tasks .del-btn {
-        margin-top: 15px;
+        margin-top: 8px;
     }
+
+    .my-all-tasks .done-btn {
+        margin-top: 6px;
+    }
+
+    .the-new-task .task-text { font-size: 16px; }
 }
 
 /* Add Media query for screens till width: 633px */
@@ -260,10 +384,24 @@ and I will copy some rules from previous start button rules and make some change
     }
 }
 
+/* Additional responsive tweaks: smaller screens and large displays */
+@media screen and (max-width: 633px) {
+    .the-new-task .task-text { font-size: 14px; }
+    /* keep buttons fixed size on small screens to match desktop */
+    .the-new-task .del-btn,
+    .the-new-task .done-btn { width: 80px; height: 40px; }
+}
+
+@media screen and (min-width: 1200px) {
+    .the-new-task .task-text { font-size: 20px; }
+    .the-new-task .del-btn,
+    .the-new-task .done-btn { width: 80px; height: 40px; }
+}
+
 /* Targets Each button inside each new task added inside the main div with class (.my-all-tasks) */
 .my-all-tasks .del-btn {
-    width: 60px;
-    height: 30px;
+    width: 80px;
+    height: 40px;
     border-radius: var(--border-radius-for-buttons);
     color: #ffffff;
     cursor: pointer;

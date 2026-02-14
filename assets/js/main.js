@@ -12,6 +12,7 @@ if (window.localStorage.getItem("my-tasks")) {
 
 window.addEventListener("load", function () {
     taskInput.focus();
+    initDateTime();
 });
 
 exitBtn.addEventListener("click", function () {
@@ -40,15 +41,39 @@ addTaskBtn.addEventListener("click", function () {
     }
 });
 
-myAllTasks.addEventListener("click", function (myDel) {
+myAllTasks.addEventListener("click", function (e) {
     errorMessage.innerText = "";
-    if (myDel.target.classList.contains("del-btn")) {
-        myDel.target.parentElement.remove();
-
-        removeTaskFromLS(myDel.target.parentElement.getAttribute("task-id"));
-
+    const target = e.target;
+    // Delete
+    if (target.classList.contains("del-btn")) {
+        const parent = target.parentElement;
+        const id = parent.getAttribute("task-id");
+        parent.remove();
+        removeTaskFromLS(id);
         taskInput.focus();
     }
+    // Toggle Done/Undone
+    if (target.classList.contains("done-btn")) {
+        const parent = target.parentElement;
+        const id = Number(parent.getAttribute('task-id'));
+        const task = theAllTasksArray.find(t => t.id === id);
+        if (!task) return;
+        task.done = !task.done;
+        // update UI
+        const textEl = parent.querySelector('.task-text');
+        if (task.done) {
+            textEl.classList.add('completed');
+            target.value = 'Undone';
+            target.classList.add('done-active');
+        } else {
+            textEl.classList.remove('completed');
+            target.value = 'Done';
+            target.classList.remove('done-active');
+        }
+        window.localStorage.setItem('my-tasks', JSON.stringify(theAllTasksArray));
+        taskInput.focus();
+    }
+
     if (theAllTasksArray.length <= 1 && document.querySelector(".clear-all-btn")) {
         document.querySelector(".clear-all-btn").style.display = "none";
     }
@@ -60,14 +85,29 @@ function showTasksOnPage(theTasksArray) {
         let eachTaskDiv = document.createElement("div");
         eachTaskDiv.className = "the-new-task";
         eachTaskDiv.setAttribute("task-id", newTaskData.id);
-        let taskTextContent = document.createTextNode(newTaskData.content);
-        eachTaskDiv.appendChild(taskTextContent);
 
+        // Delete button (left)
         let delBtn = document.createElement("input");
         delBtn.className = "del-btn";
         delBtn.setAttribute("type", "submit");
         delBtn.setAttribute("value", "Delete");
         eachTaskDiv.appendChild(delBtn);
+
+        // Task text (center)
+        let taskText = document.createElement("div");
+        taskText.className = "task-text";
+        taskText.textContent = newTaskData.content;
+        if (newTaskData.done) taskText.classList.add('completed');
+        eachTaskDiv.appendChild(taskText);
+
+        // Done toggle button (right)
+        let doneBtn = document.createElement("input");
+        doneBtn.className = "done-btn";
+        doneBtn.setAttribute("type", "button");
+        doneBtn.setAttribute("value", newTaskData.done ? "Undone" : "Done");
+        if (newTaskData.done) doneBtn.classList.add('done-active');
+        eachTaskDiv.appendChild(doneBtn);
+
         myAllTasks.appendChild(eachTaskDiv);
 
         taskInput.focus();
@@ -94,6 +134,7 @@ function myNewTasks(taskContent) {
     let newTaskData = {
         id: Math.floor(Math.random() * 1e7),
         content: taskContent,
+        done: false,
     };
     if (newTaskData.content !== "") {
         theAllTasksArray.push(newTaskData);

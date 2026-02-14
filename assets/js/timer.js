@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  initDateTime();
   let seconds = 0;
   let timer = null;
   let isRunning = false;
@@ -51,3 +52,20 @@ document.addEventListener("DOMContentLoaded", () => {
     window.open("todolistpage.html", "_self");
   };
 });
+
+function initDateTime() {
+  const dtEl = document.getElementById('datetime');
+  if (!dtEl) return;
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function update(){
+    const now = new Date();
+    const day = now.getDate();
+    const month = months[now.getMonth()];
+    const hours = pad(now.getHours());
+    const minutes = pad(now.getMinutes());
+    dtEl.innerHTML = `<div class="clock-time">${hours}:${minutes}</div><div class="clock-date">${day} ${month}</div>`;
+  }
+  update();
+  setInterval(update, 1000);
+}
